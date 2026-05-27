@@ -43,3 +43,14 @@
 - **What the user rejected:** Previous oversized/broken hero title rendering.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-27 - ForgeWalker itch.io work feed
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io profile inspection.
+- **Task purpose:** Use the ForgeWalker Studios itch.io profile for studio work, make the roster refresh automatically, and remove user-facing process commentary from rendered pages.
+- **Input materials used:** User request; public ForgeWalker Studios itch.io profile HTML.
+- **What AI produced:** Project data JSON, an itch.io scraper script, a scheduled GitHub Actions workflow, client-side project rendering, updated public site copy, and refreshed support links.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** Public-facing process commentary and Jazhikho-profile work as studio work.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.

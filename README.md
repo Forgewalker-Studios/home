@@ -22,7 +22,7 @@ This repository is intended to publish through GitHub Pages from the repository 
 
 - Homepage source: https://github.com/Forgewalker-Studios/home
 - Patreon: https://www.patreon.com/forgewalkerstudios
-- itch.io portfolio: https://jazhikho.itch.io/
+- ForgeWalker Studios itch.io: https://forgewalkerstudios.itch.io/
 - Jazhikho about page: https://jazhikho.github.io/about-me/
 
 ## Branding Assets
@@ -31,4 +31,4 @@ ForgeWalker Studios logo and cover art are stored locally in `assets/branding/` 
 
 ## Maintenance Notes
 
-When featured member work changes, update the project cards in `index.html` and record significant AI-assisted edits in `docs/AI_ASSISTANCE_LOG.md`.
+ForgeWalker Studios itch.io project data is refreshed by `.github/workflows/update-itch-projects.yml`.

@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Oswald:wght@500;600;700&family=Spectral:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260527-hero-fix" />
+    <link rel="stylesheet" href="styles.css?v=20260527-forgewalker-work" />
   </head>
   <body>
     <header class="site-header">
@@ -76,13 +76,11 @@
       <section class="content-band split-section" aria-labelledby="focus-title">
         <div>
           <p class="eyebrow">Studio focus</p>
-          <h2 id="focus-title">Human-led creative work with accountable tools.</h2>
+          <h2 id="focus-title">Games with intent, tools with purpose.</h2>
         </div>
         <p>
-          ForgeWalker Studios uses AI-assisted workflows only for bounded support tasks such as
-          drafting, coding assistance, refactoring, testing, and structured ideation. Creative
-          direction, facts, design judgment, cultural judgment, licensing decisions, validation, and
-          release approval remain human responsibilities.
+          ForgeWalker Studios develops creative projects that aim to be emotionally meaningful,
+          thoughtfully designed, and focused on experiences worth staying with.
         </p>
       </section>
 
@@ -91,60 +89,14 @@
           <p class="eyebrow">Featured work</p>
           <h2 id="featured-title">Recent public projects</h2>
         </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <img
-              src="https://img.itch.zone/aW1nLzI3NDMzODA5LnBuZw==/315x250%23c/xJz3sw.png"
-              width="315"
-              height="250"
-              alt="Untitled Map Game cover art"
-            />
-            <div class="card-copy">
-              <span class="project-label">Simulation / Strategy</span>
-              <h3>Untitled Map Game</h3>
-              <p>
-                Chart a world tile by tile before HQ runs out of supplies and morale.
-              </p>
-              <a href="https://jazhikho.itch.io/untitled-map-game">View on itch.io</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img
-              src="https://img.itch.zone/aW1nLzI3MzIwNjYzLnBuZw==/315x250%23c/OSX%2F%2BU.png"
-              width="315"
-              height="250"
-              alt="Around the Bend cover art"
-            />
-            <div class="card-copy">
-              <span class="project-label">Adventure</span>
-              <h3>Around the Bend</h3>
-              <p>Paddle down the River Feral. Who do you trust?</p>
-              <a href="https://jazhikho.itch.io/around-the-bend">View on itch.io</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img
-              src="https://img.itch.zone/aW1nLzI1ODI1NTcwLnBuZw==/315x250%23c/WTpJu1.png"
-              width="315"
-              height="250"
-              alt="StarGen cover art"
-            />
-            <div class="card-copy">
-              <span class="project-label">Tool</span>
-              <h3>StarGen</h3>
-              <p>Procedural galaxy and star-system tooling for automated worldbuilding.</p>
-              <a href="https://jazhikho.itch.io/stargen">View on itch.io</a>
-            </div>
-          </article>
-        </div>
+        <div class="project-grid" data-project-section data-project-limit="3"></div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 ForgeWalker Studios. Projects and release decisions are human-led.</p>
+      <p>&copy; 2026 ForgeWalker Studios.</p>
       <a href="support.html">Support the work</a>
     </footer>
+    <script src="scripts/render-projects.js?v=20260527-forgewalker-work" defer></script>
   </body>
 </html>

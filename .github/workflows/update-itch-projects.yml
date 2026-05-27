@@ -1,0 +1,36 @@
+name: Update itch.io projects
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh project data
+        run: node scripts/update-itch-projects.mjs
+
+      - name: Commit project data
+        run: |
+          if git diff --quiet -- content/forgewalker-itch-projects.json; then
+            echo "No project changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/forgewalker-itch-projects.json
+          git commit -m "chore: update ForgeWalker itch.io projects"
+          git push

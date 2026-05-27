@@ -24,3 +24,9 @@
 ## 0.0.3.1 - 2026-05-27
 
 - Fixed homepage hero title sizing and cache-busted the shared stylesheet reference.
+
+## 0.0.4.0 - 2026-05-27
+
+- Replaced hard-coded member project cards with ForgeWalker Studios itch.io project rendering.
+- Added a scheduled GitHub Actions workflow to refresh ForgeWalker itch.io project data.
+- Removed public-facing process notes from the site copy.

@@ -387,6 +387,31 @@ p {
   background: var(--surface);
 }
 
+.project-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background:
+    linear-gradient(145deg, rgba(201, 47, 37, 0.18), rgba(9, 10, 10, 0.94)),
+    var(--surface);
+  color: var(--steel-bright);
+  font-family: "Oswald", "Manrope", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border: 1px solid var(--line-warm);
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, var(--surface-warm), rgba(9, 10, 10, 0.94));
+  color: var(--muted);
+  box-shadow: var(--shadow);
+}
+
 .card-copy {
   display: flex;
   flex-direction: column;
