@@ -2,6 +2,14 @@
 
 Static GitHub Pages homepage for ForgeWalker Studios.
 
+## Pages
+
+- `index.html` - overview homepage
+- `work.html` - public member work
+- `about.html` - studio purpose and workflow principles
+- `members.html` - current member profile
+- `support.html` - Patreon, itch.io, and GitHub links
+
 ## Local Preview
 
 Open `index.html` directly in a browser, or serve the folder with any static file server.
@@ -15,6 +23,7 @@ This repository is intended to publish through GitHub Pages from the repository 
 - Homepage source: https://github.com/Forgewalker-Studios/home
 - Patreon: https://www.patreon.com/forgewalkerstudios
 - itch.io portfolio: https://jazhikho.itch.io/
+- Jazhikho about page: https://jazhikho.github.io/about-me/
 
 ## Maintenance Notes
 

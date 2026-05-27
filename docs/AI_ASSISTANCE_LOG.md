@@ -10,3 +10,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-27 - Multi-page homepage revision
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; web search/open for public link and theme verification; local shell and browser preview for implementation checks.
+- **Task purpose:** Revise the homepage to use Jazhikho's logo and About Me page, align the site theme with Patreon/itch.io/portfolio visual direction, and split content into separate pages.
+- **Input materials used:** User request; public Jazhikho About Me page; public Jazhikho About Me CSS and JSON content; public Jazhikho itch.io profile theme and current project roster; public Patreon post feed metadata.
+- **What AI produced:** Revised static pages for Home, Work, About, Members, and Support; updated shared CSS; README and version history updates; this assistance-log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
