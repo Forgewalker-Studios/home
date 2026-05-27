@@ -21,3 +21,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-27 - ForgeWalker theme correction
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell and in-app browser; public Patreon page asset inspection.
+- **Task purpose:** Replace the site-wide Jazhikho-inspired styling with ForgeWalker Studios branding while keeping Jazhikho's logo only on the Members page.
+- **Input materials used:** User request; public ForgeWalker Studios Patreon page metadata; public Patreon profile logo and cover image.
+- **What AI produced:** Local ForgeWalker branding assets, revised header branding, updated home hero art, and a black/red/steel ForgeWalker visual theme.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** The previous site-wide Jazhikho theme direction.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.

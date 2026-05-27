@@ -1,20 +1,22 @@
 :root {
   color-scheme: dark;
-  --bg: #131416;
-  --bg-deep: #0c0908;
-  --surface: #1e1f21;
-  --surface-warm: rgba(29, 23, 20, 0.94);
-  --surface-strong: #25201d;
-  --text: #f5eee6;
-  --text-itch: #e8e1d8;
-  --muted: #c6baad;
-  --quiet: rgba(232, 225, 216, 0.68);
-  --line: #37393e;
-  --line-warm: rgba(223, 190, 146, 0.22);
-  --gold: #c89a4b;
-  --gold-soft: #dfbe92;
-  --gold-strong: #f0d2aa;
+  --bg: #101112;
+  --bg-deep: #070808;
+  --surface: #181a1b;
+  --surface-warm: rgba(20, 22, 23, 0.94);
+  --surface-strong: #202427;
+  --text: #f1f0eb;
+  --text-itch: #e5e2da;
+  --muted: #b9b7b1;
+  --quiet: rgba(229, 226, 218, 0.68);
+  --line: #34383b;
+  --line-warm: rgba(211, 52, 40, 0.3);
+  --forge: #c92f25;
+  --forge-soft: #f05a46;
+  --steel-bright: #f6f3ec;
   --patreon: #ff424d;
+  --citylight: #9eddf2;
+  --sunrise: #e9b98e;
   --radius: 13px;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
   --site-width: min(1180px, calc(100vw - 2rem));
@@ -32,8 +34,9 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at 12% 0%, rgba(200, 154, 75, 0.15), transparent 28rem),
-    radial-gradient(circle at 88% 6%, rgba(255, 66, 77, 0.09), transparent 24rem),
+    radial-gradient(circle at 12% 0%, rgba(201, 47, 37, 0.18), transparent 26rem),
+    radial-gradient(circle at 88% 7%, rgba(158, 221, 242, 0.14), transparent 25rem),
+    radial-gradient(circle at 48% 0%, rgba(233, 185, 142, 0.11), transparent 30rem),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 52%, #090707 100%);
   color: var(--text);
   font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -59,7 +62,7 @@ a {
   justify-content: space-between;
   gap: 1.5rem;
   padding: 0.9rem max(1rem, calc((100vw - 1180px) / 2));
-  border-bottom: 1px solid rgba(223, 190, 146, 0.1);
+  border-bottom: 1px solid rgba(201, 47, 37, 0.22);
   background: rgba(9, 7, 7, 0.78);
   backdrop-filter: blur(18px);
 }
@@ -73,19 +76,14 @@ a {
 }
 
 .brand-mark {
-  display: grid;
   flex: 0 0 auto;
-  place-items: center;
   width: 52px;
   height: 52px;
-  border: 1px solid var(--line-warm);
+  border: 1px solid rgba(201, 47, 37, 0.4);
   border-radius: var(--radius);
-  background: linear-gradient(135deg, rgba(240, 210, 170, 0.22), rgba(200, 154, 75, 0.08));
-  color: var(--gold-strong);
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  object-fit: cover;
+  background: #111;
+  box-shadow: 0 8px 24px rgba(201, 47, 37, 0.14);
 }
 
 .brand-copy {
@@ -95,11 +93,12 @@ a {
 
 .brand-name {
   color: var(--text);
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(1.55rem, 2.8vw, 2.25rem);
+  font-family: "Oswald", "Manrope", sans-serif;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .brand-role {
@@ -127,7 +126,7 @@ a {
 .text-link,
 .project-card a,
 .site-footer a {
-  color: var(--gold-strong);
+  color: var(--forge-soft);
 }
 
 .nav-links a:focus-visible,
@@ -135,7 +134,7 @@ a {
 .project-card a:focus-visible,
 .support-link:focus-visible,
 .text-link:focus-visible {
-  outline: 3px solid rgba(240, 210, 170, 0.85);
+  outline: 3px solid rgba(240, 90, 70, 0.85);
   outline-offset: 4px;
 }
 
@@ -168,7 +167,7 @@ main {
 .support-link {
   border: 1px solid var(--line-warm);
   border-radius: var(--radius);
-  background: linear-gradient(160deg, var(--surface-warm), rgba(18, 14, 12, 0.93));
+  background: linear-gradient(160deg, var(--surface-warm), rgba(9, 10, 10, 0.94));
   box-shadow: var(--shadow);
 }
 
@@ -185,22 +184,44 @@ main {
   padding: clamp(1.2rem, 3vw, 2rem);
 }
 
-.feature-logo {
+.feature-cover {
   position: absolute;
-  inset: 1rem auto auto 50%;
-  width: min(84%, 440px);
-  transform: translateX(-50%);
-  opacity: 0.16;
-  filter: saturate(0.95) contrast(1.08);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.74;
+  filter: saturate(0.95) contrast(1.06);
+}
+
+.feature-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 8, 8, 0.1), rgba(7, 8, 8, 0.82)),
+    linear-gradient(90deg, rgba(7, 8, 8, 0.35), rgba(201, 47, 37, 0.08));
+}
+
+.feature-emblem {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1;
+  width: min(34%, 150px);
+  border: 1px solid rgba(201, 47, 37, 0.42);
+  border-radius: var(--radius);
+  opacity: 0.9;
+  box-shadow: var(--shadow);
 }
 
 .feature-panel > div {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding: 1rem;
-  border: 1px solid rgba(223, 190, 146, 0.14);
+  border: 1px solid rgba(201, 47, 37, 0.22);
   border-radius: var(--radius);
-  background: rgba(12, 9, 8, 0.72);
+  background: rgba(7, 8, 8, 0.78);
 }
 
 .page-hero {
@@ -236,7 +257,7 @@ main {
 .project-label,
 .panel-label {
   margin: 0 0 0.65rem;
-  color: var(--gold);
+  color: var(--forge);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -252,9 +273,10 @@ p {
 
 h1,
 h2 {
-  font-family: "Cormorant Garamond", serif;
-  line-height: 0.98;
-  letter-spacing: 0.035em;
+  font-family: "Oswald", "Manrope", sans-serif;
+  line-height: 0.94;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -277,10 +299,11 @@ h2 {
 .project-card h2,
 .project-card h3 {
   margin-bottom: 0.65rem;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
-  line-height: 1;
-  letter-spacing: 0.035em;
+  font-family: "Oswald", "Manrope", sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .lede {
@@ -317,8 +340,9 @@ p {
 
 .button.primary {
   border-color: transparent;
-  background: linear-gradient(135deg, var(--gold-strong), var(--gold));
-  color: #130e0b;
+  background: linear-gradient(135deg, var(--forge-soft), var(--forge));
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(201, 47, 37, 0.22);
 }
 
 .text-link,
@@ -382,7 +406,7 @@ p {
   justify-self: center;
   border: 1px solid var(--line-warm);
   border-radius: var(--radius);
-  background: rgba(12, 9, 8, 0.65);
+  background: rgba(7, 8, 8, 0.65);
   box-shadow: var(--shadow);
 }
 
@@ -421,7 +445,7 @@ p {
 }
 
 .support-link span {
-  color: var(--gold);
+  color: var(--forge);
   font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0.18em;
@@ -430,9 +454,11 @@ p {
 
 .support-link strong {
   color: var(--text);
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Oswald", "Manrope", sans-serif;
   font-size: 1.75rem;
   line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .support-link.patreon {

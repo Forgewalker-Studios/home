@@ -25,6 +25,10 @@ This repository is intended to publish through GitHub Pages from the repository 
 - itch.io portfolio: https://jazhikho.itch.io/
 - Jazhikho about page: https://jazhikho.github.io/about-me/
 
+## Branding Assets
+
+ForgeWalker Studios logo and cover art are stored locally in `assets/branding/` so the site does not depend on expiring Patreon media URLs.
+
 ## Maintenance Notes
 
 When featured member work changes, update the project cards in `index.html` and record significant AI-assisted edits in `docs/AI_ASSISTANCE_LOG.md`.

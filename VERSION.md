@@ -11,6 +11,12 @@
 ## 0.0.2.0 - 2026-05-27
 
 - Split the site into Home, Work, About, Members, and Support pages.
-- Updated the visual theme to match Jazhikho's itch.io and public portfolio dark/gold palette.
+- Updated the visual theme to match ForgeWalker Studios' Patreon logo and cover art.
 - Updated the Members page to use Jazhikho's logo and link to the public About Me portfolio.
 - Refreshed the Work page with the current public itch.io project roster.
+
+## 0.0.3.0 - 2026-05-27
+
+- Replaced the site-wide member-inspired theme with ForgeWalker Studios branding.
+- Added local ForgeWalker logo and cover art assets from the public Patreon page.
+- Updated the global palette around black, forge red, steel, and cool city-light accents.
