@@ -32,3 +32,14 @@
 - **What the user rejected:** The previous site-wide Jazhikho theme direction.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-27 - Live hero title rendering fix
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; in-app browser viewport checks.
+- **Task purpose:** Correct live homepage hero title rendering and prevent stale CSS from persisting in browsers.
+- **Input materials used:** User screenshot and live GitHub Pages rendering state.
+- **What AI produced:** Word-safe hero title markup, reduced mobile/intermediate heading scale, and cache-busted stylesheet links.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** Previous oversized/broken hero title rendering.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.

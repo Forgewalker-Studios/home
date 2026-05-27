@@ -20,3 +20,7 @@
 - Replaced the site-wide member-inspired theme with ForgeWalker Studios branding.
 - Added local ForgeWalker logo and cover art assets from the public Patreon page.
 - Updated the global palette around black, forge red, steel, and cool city-light accents.
+
+## 0.0.3.1 - 2026-05-27
+
+- Fixed homepage hero title sizing and cache-busted the shared stylesheet reference.
