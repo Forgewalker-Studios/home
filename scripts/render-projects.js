@@ -33,9 +33,14 @@ function renderProjectSections(sections, projects) {
     section.replaceChildren();
 
     if (!visibleProjects.length) {
-      const empty = document.createElement("p");
+      const empty = document.createElement("div");
       empty.className = "empty-state";
-      empty.textContent = fallbackMessage;
+      const message = document.createElement("p");
+      message.textContent = fallbackMessage;
+      const link = document.createElement("a");
+      link.href = "https://forgewalkerstudios.itch.io/";
+      link.textContent = "Visit ForgeWalker Studios on itch.io";
+      empty.append(message, link);
       section.append(empty);
       return;
     }

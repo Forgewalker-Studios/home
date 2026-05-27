@@ -412,6 +412,21 @@ p {
   box-shadow: var(--shadow);
 }
 
+.empty-state p {
+  margin-bottom: 0.8rem;
+}
+
+.empty-state a {
+  color: var(--forge-soft);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.empty-state a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+}
+
 .card-copy {
   display: flex;
   flex-direction: column;
