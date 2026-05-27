@@ -67,6 +67,7 @@ function extractJam(html, week, url) {
     cleanText(matchText(html, /<meta content="([^"]+)" property="og:title"/i)) ||
     `One Game A Week Jam #${week}`;
   const summary = cleanText(matchText(html, /<meta content="([^"]+)" name="description"/i));
+  const bannerImage = absolutizeUrl(matchText(html, /<img class="jam_banner\s*" src="([^"]+)"/i), url);
 
   return {
     week,
@@ -76,12 +77,8 @@ function extractJam(html, week, url) {
     results_url: `${url}/results`,
     community_url: `${url}/community`,
     host: cleanText(matchText(html, /Hosted by <a[^>]*>([\s\S]*?)<\/a>/i)),
-    banner_image: absolutizeUrl(matchText(html, /<img class="jam_banner\s*" src="([^"]+)"/i), url),
-    image: absolutizeUrl(
-      matchText(html, /<meta content="([^"]+)" property="og:image"/i) ||
-        matchText(html, /<meta content="([^"]+)" property="twitter:image"/i),
-      url
-    ),
+    banner_image: bannerImage,
+    image: bannerImage,
     summary,
     start_date: toIsoDate(viewJamData.start_date),
     end_date: toIsoDate(viewJamData.end_date),
