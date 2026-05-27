@@ -30,3 +30,10 @@
 - Replaced hard-coded member project cards with ForgeWalker Studios itch.io project rendering.
 - Added a scheduled GitHub Actions workflow to refresh ForgeWalker itch.io project data.
 - Removed public-facing process notes from the site copy.
+
+## 0.0.5.0 - 2026-05-27
+
+- Added a One Game a Week Jam page.
+- Added dynamic jam data sourced from the numbered itch.io jam pages.
+- Added a scheduled GitHub Actions workflow to refresh current, scheduled, and past jam lists.
+- Added site content validation for local links, public page copy, and jam data shape.

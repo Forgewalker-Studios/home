@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="One Game a Week Jam is a recurring jam focused on making small, finished games quickly." />
+    <title>1G1W Jam | ForgeWalker Studios</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Oswald:wght@500;600;700&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260527-1g1w" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ForgeWalker Studios home">
+        <img class="brand-mark" src="assets/branding/forgewalker-logo.png" width="52" height="52" alt="" />
+        <span class="brand-copy"><span class="brand-name">ForgeWalker Studios</span><span class="brand-role">Forging Realities</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="1g1w.html" aria-current="page">1G1W Jam</a>
+        <a href="about.html">About</a>
+        <a href="members.html">Members</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <main data-jam-page>
+      <section class="page-hero jam-hero" aria-labelledby="jam-title">
+        <p class="eyebrow">One Game a Week Jam</p>
+        <h1 id="jam-title">Make small things. Finish them.</h1>
+        <p class="lede">
+          1G1W is a recurring game jam built around momentum: make small, playable games,
+          finish them, share them, and learn by shipping.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#current-jams">Current Jam</a>
+          <a class="button" href="#scheduled-jams">Upcoming Weeks</a>
+        </div>
+      </section>
+
+      <section class="content-band split-section" aria-labelledby="intent-title">
+        <div>
+          <p class="eyebrow">Intentions</p>
+          <h2 id="intent-title">Build scope discipline through repetition.</h2>
+        </div>
+        <div>
+          <p>
+            Each week gives creators a compact set of prompts. The goal is not to build a
+            masterpiece every time; the goal is to practice finishing, publishing, and learning from
+            small playable work.
+          </p>
+          <ul class="principle-list">
+            <li>Start fresh during the jam period.</li>
+            <li>Keep the game playable and scoped small.</li>
+            <li>Use the prompts creatively.</li>
+            <li>Share constructive feedback with other participants.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="current-title">
+        <div class="section-heading">
+          <p class="eyebrow">Now</p>
+          <h2 id="current-title">Current jams</h2>
+        </div>
+        <div class="jam-grid" id="current-jams"></div>
+      </section>
+
+      <section class="content-section" aria-labelledby="scheduled-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next</p>
+          <h2 id="scheduled-title">Scheduled jams</h2>
+        </div>
+        <div class="jam-grid" id="scheduled-jams"></div>
+      </section>
+
+      <section class="content-section" aria-labelledby="past-title">
+        <div class="section-heading">
+          <p class="eyebrow">Archive</p>
+          <h2 id="past-title">Past jams</h2>
+        </div>
+        <div class="jam-grid" id="past-jams"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 ForgeWalker Studios.</p>
+      <a href="#current-jams">View jams</a>
+    </footer>
+    <script src="scripts/render-gameaweek-jams.js?v=20260527-1g1w" defer></script>
+  </body>
+</html>

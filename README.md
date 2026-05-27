@@ -6,6 +6,7 @@ Static GitHub Pages homepage for ForgeWalker Studios.
 
 - `index.html` - overview homepage
 - `work.html` - public member work
+- `1g1w.html` - One Game a Week Jam hub
 - `about.html` - studio purpose and workflow principles
 - `members.html` - current member profile
 - `support.html` - Patreon, itch.io, and GitHub links
@@ -32,3 +33,8 @@ ForgeWalker Studios logo and cover art are stored locally in `assets/branding/` 
 ## Maintenance Notes
 
 ForgeWalker Studios itch.io project data is refreshed by `.github/workflows/update-itch-projects.yml`.
+One Game a Week Jam data is refreshed by `.github/workflows/update-gameaweek-jams.yml`.
+
+## Validation
+
+Run `node scripts/test-site-content.mjs` to check local page links, public page copy, and One Game a Week jam data shape.

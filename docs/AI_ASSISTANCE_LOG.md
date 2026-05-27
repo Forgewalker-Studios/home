@@ -54,3 +54,14 @@
 - **What the user rejected:** Public-facing process commentary and Jazhikho-profile work as studio work.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-27 - One Game a Week Jam page
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io jam page inspection.
+- **Task purpose:** Add a themed 1G1W Jam page that dynamically lists current, scheduled, and past weekly jams from itch.io.
+- **Input materials used:** User request; public itch.io jam pages `1gameaweek` through `4gameaweek`; page metadata and structured jam date data from itch.io.
+- **What AI produced:** `1g1w.html`, jam data JSON, jam scraper script, jam renderer script, scheduled GitHub Actions refresh workflow, navigation updates, and supporting styles.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
