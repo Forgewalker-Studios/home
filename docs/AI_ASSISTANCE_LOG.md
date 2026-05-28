@@ -76,3 +76,14 @@
 - **What the user rejected:** Missing View Jam affordance on current and scheduled jam cards.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-28 - One Game a Week leaderboard
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io result page inspection.
+- **Task purpose:** Add game thumbnails beside ranked entries and add an overall searchable One Game a Week leaderboard.
+- **Input materials used:** User request; current leaderboard scores supplied by the user; public itch.io result page profile and thumbnail links; existing 1G1W page code.
+- **What AI produced:** Ranked-entry thumbnail scraping, leaderboard JSON, leaderboard rendering with search and paging, supporting styles, cache-busting updates, and validation coverage.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.

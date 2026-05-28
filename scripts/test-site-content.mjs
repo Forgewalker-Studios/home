@@ -8,6 +8,7 @@ const forbiddenPublicTerms = /\b(AI|assisted|human-led|release decisions|editing
 await testLocalHtmlLinks();
 await testPublicPageCopy();
 await testJamData();
+await testLeaderboardData();
 
 console.log("Site content checks passed.");
 
@@ -58,6 +59,26 @@ async function testJamData() {
       assert.match(entry.rank, /^\d+(st|nd|rd|th)$/);
       assert.ok(entry.title, `Jam week ${week} ranked entry must include a title`);
       assert.ok(entry.url.startsWith("https://"), `Jam week ${week} ranked entry must include an absolute URL`);
+      assert.ok(entry.thumbnail.startsWith("https://"), `Jam week ${week} ranked entry must include a thumbnail URL`);
+    }
+  }
+}
+
+async function testLeaderboardData() {
+  const data = JSON.parse(await readText("content/one-game-a-week-leaderboard.json"));
+  const entries = data.leaderboard ?? [];
+
+  assert.ok(Array.isArray(entries), "Leaderboard data must include a leaderboard array");
+  assert.ok(entries.length > 0, "Leaderboard data should include at least one entry");
+
+  for (let index = 0; index < entries.length; index += 1) {
+    const entry = entries[index];
+    assert.ok(entry.username, `Leaderboard entry ${index + 1} must include a username`);
+    assert.ok(Number.isFinite(Number(entry.score)), `Leaderboard entry ${index + 1} must include a numeric score`);
+    assert.ok(entry.profile_url.startsWith("https://"), `Leaderboard entry ${index + 1} must include a profile URL`);
+
+    if (index > 0) {
+      assert.ok(Number(entries[index - 1].score) >= Number(entry.score), "Leaderboard scores should be sorted descending");
     }
   }
 }

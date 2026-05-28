@@ -1,4 +1,9 @@
 const jamDataUrl = "content/one-game-a-week-jams.json";
+const leaderboardDataUrl = "content/one-game-a-week-leaderboard.json";
+const pageSize = 10;
+let leaderboardEntries = [];
+let leaderboardPage = 0;
+let leaderboardQuery = "";
 
 initJamPage();
 
@@ -10,15 +15,27 @@ async function initJamPage() {
   }
 
   try {
-    const response = await fetch(`${jamDataUrl}?v=20260528-rankings`, { cache: "no-store" });
+    const jamResponse = await fetch(`${jamDataUrl}?v=20260528-leaderboard`, { cache: "no-store" });
 
-    if (!response.ok) {
-      throw new Error(`Unable to load jams: ${response.status}`);
+    if (!jamResponse.ok) {
+      throw new Error(`Unable to load jams: ${jamResponse.status}`);
     }
 
-    renderJamPage(await response.json());
+    renderJamPage(await jamResponse.json());
   } catch {
     renderJamPage({ jams: [] });
+  }
+
+  try {
+    const leaderboardResponse = await fetch(`${leaderboardDataUrl}?v=20260528-leaderboard`, { cache: "no-store" });
+
+    if (!leaderboardResponse.ok) {
+      throw new Error(`Unable to load leaderboard: ${leaderboardResponse.status}`);
+    }
+
+    initLeaderboard(await leaderboardResponse.json());
+  } catch {
+    initLeaderboard({ leaderboard: [] });
   }
 }
 
@@ -124,8 +141,20 @@ function createPodiumList(entries) {
 
   entries.slice(0, 3).forEach((entry) => {
     const item = document.createElement("li");
+    const icon = document.createElement("span");
     const rank = document.createElement("span");
     const link = document.createElement("a");
+
+    icon.className = "podium-icon";
+
+    if (entry.thumbnail) {
+      const image = document.createElement("img");
+      image.src = entry.thumbnail;
+      image.alt = "";
+      image.loading = "lazy";
+      image.decoding = "async";
+      icon.append(image);
+    }
 
     rank.className = "podium-rank";
     rank.textContent = `${entry.rank} - `;
@@ -133,11 +162,112 @@ function createPodiumList(entries) {
     link.textContent = entry.title;
     link.title = entry.author ? `${entry.title} by ${entry.author}` : entry.title;
 
-    item.append(rank, link);
+    item.append(icon, rank, link);
     list.append(item);
   });
 
   return list;
+}
+
+function initLeaderboard(data) {
+  leaderboardEntries = [...(data.leaderboard ?? [])]
+    .filter((entry) => entry.username && Number.isFinite(Number(entry.score)))
+    .sort((left, right) => Number(right.score) - Number(left.score));
+  leaderboardPage = 0;
+  leaderboardQuery = "";
+
+  const search = document.getElementById("leaderboard-search");
+  const previous = document.getElementById("leaderboard-prev");
+  const next = document.getElementById("leaderboard-next");
+
+  if (search) {
+    search.addEventListener("input", () => {
+      leaderboardQuery = search.value.trim().toLowerCase();
+      leaderboardPage = 0;
+      renderLeaderboard();
+    });
+  }
+
+  previous?.addEventListener("click", () => {
+    leaderboardPage = Math.max(0, leaderboardPage - 1);
+    renderLeaderboard();
+  });
+
+  next?.addEventListener("click", () => {
+    const maxPage = Math.max(0, Math.ceil(getFilteredLeaderboard().length / pageSize) - 1);
+    leaderboardPage = Math.min(maxPage, leaderboardPage + 1);
+    renderLeaderboard();
+  });
+
+  renderLeaderboard();
+}
+
+function renderLeaderboard() {
+  const container = document.getElementById("leaderboard-list");
+  const count = document.getElementById("leaderboard-count");
+  const previous = document.getElementById("leaderboard-prev");
+  const next = document.getElementById("leaderboard-next");
+
+  if (!container) {
+    return;
+  }
+
+  const filtered = getFilteredLeaderboard();
+  const maxPage = Math.max(0, Math.ceil(filtered.length / pageSize) - 1);
+  leaderboardPage = Math.min(leaderboardPage, maxPage);
+  const page = filtered.slice(leaderboardPage * pageSize, leaderboardPage * pageSize + pageSize);
+
+  container.replaceChildren();
+
+  if (!page.length) {
+    const empty = document.createElement("p");
+    empty.className = "empty-state";
+    empty.textContent = "No leaderboard entries match that search.";
+    container.append(empty);
+  } else {
+    page.forEach((entry) => container.append(createLeaderboardRow(entry, leaderboardEntries.indexOf(entry) + 1)));
+  }
+
+  if (count) {
+    const start = filtered.length ? leaderboardPage * pageSize + 1 : 0;
+    const end = Math.min(filtered.length, (leaderboardPage + 1) * pageSize);
+    count.textContent = `${start}-${end} of ${filtered.length}`;
+  }
+
+  if (previous) {
+    previous.disabled = leaderboardPage === 0;
+  }
+
+  if (next) {
+    next.disabled = leaderboardPage >= maxPage;
+  }
+}
+
+function getFilteredLeaderboard() {
+  if (!leaderboardQuery) {
+    return leaderboardEntries;
+  }
+
+  return leaderboardEntries.filter((entry) => entry.username.toLowerCase().includes(leaderboardQuery));
+}
+
+function createLeaderboardRow(entry, rank) {
+  const row = document.createElement("li");
+  const place = document.createElement("span");
+  const profile = document.createElement("a");
+  const score = document.createElement("span");
+
+  row.className = "leaderboard-row";
+  row.setAttribute("aria-label", `${rank}. ${entry.username}, ${Number(entry.score).toFixed(3)} points`);
+  place.className = "leaderboard-rank";
+  place.textContent = `${rank}.`;
+  profile.href = entry.profile_url || "#";
+  profile.textContent = entry.username;
+  score.className = "leaderboard-score";
+  score.textContent = Number(entry.score).toFixed(3);
+
+  row.append(place, profile, score);
+  return row;
 }
 
 function addStat(list, label, value) {

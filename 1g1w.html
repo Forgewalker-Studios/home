@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Oswald:wght@500;600;700&family=Spectral:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260528-rankings" />
+    <link rel="stylesheet" href="styles.css?v=20260528-leaderboard" />
   </head>
   <body>
     <header class="site-header">
@@ -61,6 +61,25 @@
         </div>
       </section>
 
+      <section class="content-section" aria-labelledby="leaderboard-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overall standings</p>
+          <h2 id="leaderboard-title">Leaderboard</h2>
+        </div>
+        <div class="leaderboard-panel">
+          <div class="leaderboard-tools">
+            <label class="screen-reader-text" for="leaderboard-search">Search leaderboard usernames</label>
+            <input id="leaderboard-search" type="search" placeholder="Search usernames" autocomplete="off" />
+            <div class="leaderboard-pager" aria-label="Leaderboard pages">
+              <button class="icon-button" id="leaderboard-prev" type="button" aria-label="Previous leaderboard page">Prev</button>
+              <span id="leaderboard-count">0-0 of 0</span>
+              <button class="icon-button" id="leaderboard-next" type="button" aria-label="Next leaderboard page">Next</button>
+            </div>
+          </div>
+          <ol class="leaderboard-list" id="leaderboard-list"></ol>
+        </div>
+      </section>
+
       <section class="content-section" aria-labelledby="current-title">
         <div class="section-heading">
           <p class="eyebrow">Now</p>
@@ -90,6 +109,6 @@
       <p>&copy; 2026 ForgeWalker Studios.</p>
       <a href="#current-jams">View jams</a>
     </footer>
-    <script src="scripts/render-gameaweek-jams.js?v=20260528-rankings" defer></script>
+    <script src="scripts/render-gameaweek-jams.js?v=20260528-leaderboard" defer></script>
   </body>
 </html>

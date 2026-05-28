@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-05-28T14:32:04.431Z",
+  "generated_at": "2026-05-28T14:47:07.548Z",
   "jams": [
     {
       "week": 1,
@@ -25,6 +25,7 @@
           "rank": "1st",
           "title": "medusa's box",
           "url": "https://fizzybones.itch.io/medusas-box",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3MzM2MzU1LnBuZw==/315x250%23c/pFO%2Bpi.png",
           "author": "fizzybones",
           "author_url": "https://fizzybones.itch.io/"
         },
@@ -32,6 +33,7 @@
           "rank": "2nd",
           "title": "CURRENT",
           "url": "https://rakadeja.itch.io/current-gamejam",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3MzMwNjk2LnBuZw==/315x250%23c/f7epXk.png",
           "author": "Rakadeja",
           "author_url": "https://rakadeja.itch.io/"
         },
@@ -39,6 +41,7 @@
           "rank": "3rd",
           "title": "A Villiage named Feral River",
           "url": "https://kayakalkuhl.itch.io/a-villiage-named-feral-river",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3MzM0MzI4LnBuZw==/315x250%23c/I79vwh.png",
           "author": "Kayakalkuhl",
           "author_url": "https://kayakalkuhl.itch.io/"
         }

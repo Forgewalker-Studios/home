@@ -43,3 +43,9 @@
 - Added explicit View Jam links for One Game a Week jam cards.
 - Added top-three ranked entry display for jams with published itch.io results.
 - Updated jam data generation and validation to include ranked result entries.
+
+## 0.0.7.0 - 2026-05-28
+
+- Added game thumbnails to ranked One Game a Week result entries.
+- Added the overall One Game a Week leaderboard with profile links, search, and page controls.
+- Added validation for leaderboard data.

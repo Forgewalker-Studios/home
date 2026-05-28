@@ -137,6 +137,8 @@ function extractTopEntries(html) {
     const block = match[1];
     const titleMatch = block.match(/<h2><a href="([^"]+)">([\s\S]*?)<\/a><\/h2>/i);
     const authorMatch = block.match(/<h3>by <a href="([^"]+)">([\s\S]*?)<\/a><\/h3>/i);
+    const thumbnail =
+      matchText(block, /<img[^>]+data-lazy_src="([^"]+)"/i) || matchText(block, /<img[^>]+src="([^"]+)"/i);
     const rank = cleanText(matchText(block, /<strong class="ordinal_rank">([\s\S]*?)<\/strong>/i));
 
     if (!titleMatch || !rank) {
@@ -147,6 +149,7 @@ function extractTopEntries(html) {
       rank,
       title: cleanText(titleMatch[2]),
       url: absolutizeUrl(titleMatch[1], "https://itch.io"),
+      thumbnail: absolutizeUrl(thumbnail, "https://itch.io"),
       author: cleanText(authorMatch?.[2] ?? ""),
       author_url: absolutizeUrl(authorMatch?.[1] ?? "", "https://itch.io")
     });
