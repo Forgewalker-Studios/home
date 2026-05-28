@@ -37,3 +37,9 @@
 - Added dynamic jam data sourced from the numbered itch.io jam pages.
 - Added a scheduled GitHub Actions workflow to refresh current, scheduled, and past jam lists.
 - Added site content validation for local links, public page copy, and jam data shape.
+
+## 0.0.6.0 - 2026-05-28
+
+- Added explicit View Jam links for One Game a Week jam cards.
+- Added top-three ranked entry display for jams with published itch.io results.
+- Updated jam data generation and validation to include ranked result entries.

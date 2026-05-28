@@ -425,6 +425,40 @@ p {
   margin: 0;
 }
 
+.podium-list {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.podium-list li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.5rem;
+  align-items: baseline;
+  min-width: 0;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.podium-list a {
+  overflow: hidden;
+  color: var(--text);
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+
+.podium-list a:hover {
+  color: var(--ember);
+}
+
+.podium-rank {
+  color: var(--ember);
+  font-weight: 800;
+}
+
 .principle-list {
   display: grid;
   gap: 0.65rem;

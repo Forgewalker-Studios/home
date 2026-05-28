@@ -33,7 +33,7 @@ ForgeWalker Studios logo and cover art are stored locally in `assets/branding/` 
 ## Maintenance Notes
 
 ForgeWalker Studios itch.io project data is refreshed by `.github/workflows/update-itch-projects.yml`.
-One Game a Week Jam data is refreshed by `.github/workflows/update-gameaweek-jams.yml`.
+One Game a Week Jam data and published result rankings are refreshed by `.github/workflows/update-gameaweek-jams.yml`.
 
 ## Validation
 

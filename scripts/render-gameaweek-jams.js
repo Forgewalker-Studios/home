@@ -10,7 +10,7 @@ async function initJamPage() {
   }
 
   try {
-    const response = await fetch(`${jamDataUrl}?v=20260527-1g1w`, { cache: "no-store" });
+    const response = await fetch(`${jamDataUrl}?v=20260528-rankings`, { cache: "no-store" });
 
     if (!response.ok) {
       throw new Error(`Unable to load jams: ${response.status}`);
@@ -90,9 +90,11 @@ function createJamCard(jam) {
 
   const actions = document.createElement("div");
   actions.className = "actions";
-  actions.append(createButton(jam.url, getPrimaryActionLabel(jam)));
+  actions.append(createButton(jam.url, "View Jam"));
 
-  if (jam.entries > 0) {
+  if (jam.status === "voting" && jam.entries > 0) {
+    actions.append(createButton(jam.entries_url, "Rate Entries"));
+  } else if (jam.entries > 0) {
     actions.append(createButton(jam.entries_url, "View Entries"));
   }
 
@@ -106,9 +108,36 @@ function createJamCard(jam) {
     body.append(stats);
   }
 
+  if (jam.top_entries?.length) {
+    body.append(createPodiumList(jam.top_entries));
+  }
+
   body.append(actions);
   article.append(body);
   return article;
+}
+
+function createPodiumList(entries) {
+  const list = document.createElement("ol");
+  list.className = "podium-list";
+  list.setAttribute("aria-label", "Top ranked entries");
+
+  entries.slice(0, 3).forEach((entry) => {
+    const item = document.createElement("li");
+    const rank = document.createElement("span");
+    const link = document.createElement("a");
+
+    rank.className = "podium-rank";
+    rank.textContent = `${entry.rank} - `;
+    link.href = entry.url;
+    link.textContent = entry.title;
+    link.title = entry.author ? `${entry.title} by ${entry.author}` : entry.title;
+
+    item.append(rank, link);
+    list.append(item);
+  });
+
+  return list;
 }
 
 function addStat(list, label, value) {
@@ -127,22 +156,6 @@ function createButton(href, label) {
   link.href = href;
   link.textContent = label;
   return link;
-}
-
-function getPrimaryActionLabel(jam) {
-  if (jam.status === "scheduled") {
-    return "Join Jam";
-  }
-
-  if (jam.status === "current") {
-    return "Submit or Join";
-  }
-
-  if (jam.status === "voting") {
-    return "Rate Entries";
-  }
-
-  return "View Jam";
 }
 
 function formatStatus(status) {

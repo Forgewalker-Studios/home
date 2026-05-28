@@ -51,6 +51,14 @@ async function testJamData() {
       Date.parse(jam.end_date) <= Date.parse(jam.voting_end_date),
       `Jam week ${week} voting end must be after submissions close`
     );
+
+    assert.ok(Array.isArray(jam.top_entries), `Jam week ${week} top entries should be an array`);
+
+    for (const entry of jam.top_entries) {
+      assert.match(entry.rank, /^\d+(st|nd|rd|th)$/);
+      assert.ok(entry.title, `Jam week ${week} ranked entry must include a title`);
+      assert.ok(entry.url.startsWith("https://"), `Jam week ${week} ranked entry must include an absolute URL`);
+    }
   }
 }
 

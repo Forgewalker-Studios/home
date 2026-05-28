@@ -31,7 +31,9 @@ for (let week = startWeek; week < startWeek + maxWeeks && consecutiveMisses < ma
   }
 
   consecutiveMisses = 0;
-  jams.push(extractJam(await response.text(), week, url));
+  const jam = extractJam(await response.text(), week, url);
+  jam.top_entries = await fetchTopEntries(jam.results_url);
+  jams.push(jam);
 }
 
 const previousData = await readPreviousData(outputPath);
@@ -111,6 +113,46 @@ function extractStats(html) {
   }
 
   return stats;
+}
+
+async function fetchTopEntries(url) {
+  const response = await fetch(url, {
+    headers: {
+      "user-agent": "ForgeWalker Studios homepage jam updater"
+    }
+  });
+
+  if (!response.ok) {
+    return [];
+  }
+
+  return extractTopEntries(await response.text()).slice(0, 3);
+}
+
+function extractTopEntries(html) {
+  const entries = [];
+  const pattern = /<div class="game_rank[^"]*">([\s\S]*?)(?=<div class="game_rank|<\/div><\/div><\/div><div class="footer">)/gi;
+
+  for (const match of html.matchAll(pattern)) {
+    const block = match[1];
+    const titleMatch = block.match(/<h2><a href="([^"]+)">([\s\S]*?)<\/a><\/h2>/i);
+    const authorMatch = block.match(/<h3>by <a href="([^"]+)">([\s\S]*?)<\/a><\/h3>/i);
+    const rank = cleanText(matchText(block, /<strong class="ordinal_rank">([\s\S]*?)<\/strong>/i));
+
+    if (!titleMatch || !rank) {
+      continue;
+    }
+
+    entries.push({
+      rank,
+      title: cleanText(titleMatch[2]),
+      url: absolutizeUrl(titleMatch[1], "https://itch.io"),
+      author: cleanText(authorMatch?.[2] ?? ""),
+      author_url: absolutizeUrl(authorMatch?.[1] ?? "", "https://itch.io")
+    });
+  }
+
+  return entries;
 }
 
 function classifyJam(jam) {

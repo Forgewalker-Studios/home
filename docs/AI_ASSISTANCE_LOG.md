@@ -65,3 +65,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-28 - One Game a Week Jam rankings
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io jam result page inspection.
+- **Task purpose:** Add visible View Jam links and feature top-three ranked entries when itch.io publishes jam results.
+- **Input materials used:** User request; public itch.io result pages for the One Game a Week Jam series; existing 1G1W page code and generated jam data.
+- **What AI produced:** Jam result scraping, ranked entry JSON fields, podium rendering, supporting styles, cache-busting updates, and validation coverage.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** Missing View Jam affordance on current and scheduled jam cards.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.

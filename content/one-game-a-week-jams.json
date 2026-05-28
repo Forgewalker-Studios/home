@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-05-28T10:40:12.789Z",
+  "generated_at": "2026-05-28T14:32:04.431Z",
   "jams": [
     {
       "week": 1,
@@ -19,7 +19,30 @@
       "entries": 9,
       "ratings": 51,
       "joined": 0,
-      "status": "past"
+      "status": "past",
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "medusa's box",
+          "url": "https://fizzybones.itch.io/medusas-box",
+          "author": "fizzybones",
+          "author_url": "https://fizzybones.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "CURRENT",
+          "url": "https://rakadeja.itch.io/current-gamejam",
+          "author": "Rakadeja",
+          "author_url": "https://rakadeja.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "A Villiage named Feral River",
+          "url": "https://kayakalkuhl.itch.io/a-villiage-named-feral-river",
+          "author": "Kayakalkuhl",
+          "author_url": "https://kayakalkuhl.itch.io/"
+        }
+      ]
     },
     {
       "week": 2,
@@ -38,7 +61,8 @@
       "entries": 5,
       "ratings": 9,
       "joined": 0,
-      "status": "voting"
+      "status": "voting",
+      "top_entries": []
     },
     {
       "week": 3,
@@ -56,8 +80,9 @@
       "voting_end_date": "2026-06-07T20:00:00.000Z",
       "entries": 1,
       "ratings": 0,
-      "joined": 86,
-      "status": "current"
+      "joined": 87,
+      "status": "current",
+      "top_entries": []
     },
     {
       "week": 4,
@@ -76,7 +101,8 @@
       "entries": 0,
       "ratings": 0,
       "joined": 1,
-      "status": "scheduled"
+      "status": "scheduled",
+      "top_entries": []
     }
   ]
 }
