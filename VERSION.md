@@ -49,3 +49,8 @@
 - Added game thumbnails to ranked One Game a Week result entries.
 - Added the overall One Game a Week leaderboard with profile links, search, and page controls.
 - Added validation for leaderboard data.
+
+## 0.0.8.0 - 2026-05-28
+
+- Combined the active One Game a Week jam listings into a three-column status row.
+- Ordered the status row as accepting submissions, voting, and next scheduled jam.

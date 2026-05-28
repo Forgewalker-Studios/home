@@ -15,7 +15,7 @@ async function initJamPage() {
   }
 
   try {
-    const jamResponse = await fetch(`${jamDataUrl}?v=20260528-leaderboard`, { cache: "no-store" });
+    const jamResponse = await fetch(`${jamDataUrl}?v=20260528-active-row`, { cache: "no-store" });
 
     if (!jamResponse.ok) {
       throw new Error(`Unable to load jams: ${jamResponse.status}`);
@@ -27,7 +27,7 @@ async function initJamPage() {
   }
 
   try {
-    const leaderboardResponse = await fetch(`${leaderboardDataUrl}?v=20260528-leaderboard`, { cache: "no-store" });
+    const leaderboardResponse = await fetch(`${leaderboardDataUrl}?v=20260528-active-row`, { cache: "no-store" });
 
     if (!leaderboardResponse.ok) {
       throw new Error(`Unable to load leaderboard: ${leaderboardResponse.status}`);
@@ -41,13 +41,42 @@ async function initJamPage() {
 
 function renderJamPage(data) {
   const jams = [...(data.jams ?? [])].sort((left, right) => left.week - right.week);
-  const current = jams.filter((jam) => jam.status === "current" || jam.status === "voting");
-  const scheduled = jams.filter((jam) => jam.status === "scheduled");
+  const accepting = jams.find((jam) => jam.status === "current");
+  const voting = [...jams].reverse().find((jam) => jam.status === "voting");
+  const next = jams.find((jam) => jam.status === "scheduled");
   const past = jams.filter((jam) => jam.status === "past").reverse();
 
-  renderJamList("current-jams", current, "No jam is accepting submissions right now.");
-  renderJamList("scheduled-jams", scheduled, "Scheduled jams will appear here when they are published on itch.io.");
+  renderFeaturedJams([
+    {
+      emptyMessage: "No jam is accepting submissions right now.",
+      jam: accepting,
+      label: "Accepting submissions"
+    },
+    {
+      emptyMessage: "No jam is in voting right now.",
+      jam: voting,
+      label: "Voting"
+    },
+    {
+      emptyMessage: "The next scheduled jam will appear here.",
+      jam: next,
+      label: "Next up"
+    }
+  ]);
   renderJamList("past-jams", past, "Past jams will appear here after the first jam closes.");
+}
+
+function renderFeaturedJams(slots) {
+  const container = document.getElementById("featured-jams");
+
+  if (!container) {
+    return;
+  }
+
+  container.replaceChildren();
+  slots.forEach((slot) => {
+    container.append(slot.jam ? createJamCard(slot.jam, slot.label) : createFeaturedPlaceholder(slot));
+  });
 }
 
 function renderJamList(id, jams, emptyMessage) {
@@ -70,7 +99,7 @@ function renderJamList(id, jams, emptyMessage) {
   jams.forEach((jam) => container.append(createJamCard(jam)));
 }
 
-function createJamCard(jam) {
+function createJamCard(jam, slotLabel = "") {
   const article = document.createElement("article");
   article.className = "jam-card";
 
@@ -90,7 +119,7 @@ function createJamCard(jam) {
 
   const label = document.createElement("span");
   label.className = "project-label";
-  label.textContent = formatStatus(jam.status);
+  label.textContent = slotLabel || formatStatus(jam.status);
 
   const title = document.createElement("h2");
   title.textContent = jam.title;
@@ -130,6 +159,29 @@ function createJamCard(jam) {
   }
 
   body.append(actions);
+  article.append(body);
+  return article;
+}
+
+function createFeaturedPlaceholder(slot) {
+  const article = document.createElement("article");
+  article.className = "jam-card no-image placeholder-card";
+
+  const body = document.createElement("div");
+  body.className = "jam-card-body";
+
+  const label = document.createElement("span");
+  label.className = "project-label";
+  label.textContent = slot.label;
+
+  const title = document.createElement("h2");
+  title.textContent = "No jam listed";
+
+  const message = document.createElement("p");
+  message.className = "jam-dates";
+  message.textContent = slot.emptyMessage;
+
+  body.append(label, title, message);
   article.append(body);
   return article;
 }

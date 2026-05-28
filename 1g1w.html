@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Oswald:wght@500;600;700&family=Spectral:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260528-leaderboard" />
+    <link rel="stylesheet" href="styles.css?v=20260528-active-row" />
   </head>
   <body>
     <header class="site-header">
@@ -36,8 +36,8 @@
           finish them, share them, and learn by shipping.
         </p>
         <div class="actions">
-          <a class="button primary" href="#current-jams">Current Jam</a>
-          <a class="button" href="#scheduled-jams">Upcoming Weeks</a>
+          <a class="button primary" href="#featured-jams">Jam Status</a>
+          <a class="button" href="#leaderboard-title">Leaderboard</a>
         </div>
       </section>
 
@@ -80,20 +80,12 @@
         </div>
       </section>
 
-      <section class="content-section" aria-labelledby="current-title">
+      <section class="content-section" aria-labelledby="featured-title">
         <div class="section-heading">
-          <p class="eyebrow">Now</p>
-          <h2 id="current-title">Current jams</h2>
+          <p class="eyebrow">Now and next</p>
+          <h2 id="featured-title">Jam status</h2>
         </div>
-        <div class="jam-grid" id="current-jams"></div>
-      </section>
-
-      <section class="content-section" aria-labelledby="scheduled-title">
-        <div class="section-heading">
-          <p class="eyebrow">Next</p>
-          <h2 id="scheduled-title">Scheduled jams</h2>
-        </div>
-        <div class="jam-grid" id="scheduled-jams"></div>
+        <div class="featured-jam-grid" id="featured-jams"></div>
       </section>
 
       <section class="content-section" aria-labelledby="past-title">
@@ -107,8 +99,8 @@
 
     <footer class="site-footer">
       <p>&copy; 2026 ForgeWalker Studios.</p>
-      <a href="#current-jams">View jams</a>
+      <a href="#featured-jams">View jams</a>
     </footer>
-    <script src="scripts/render-gameaweek-jams.js?v=20260528-leaderboard" defer></script>
+    <script src="scripts/render-gameaweek-jams.js?v=20260528-active-row" defer></script>
   </body>
 </html>

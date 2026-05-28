@@ -87,3 +87,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-05-28 - One Game a Week status row
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; in-app browser verification.
+- **Task purpose:** Combine current and scheduled One Game a Week jam listings into a single three-column status row.
+- **Input materials used:** User request; existing generated jam data and 1G1W page code.
+- **What AI produced:** Status-row rendering logic, updated 1G1W markup, responsive grid styles, cache-busting updates, and version documentation.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** Separate current and scheduled jam sections.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
