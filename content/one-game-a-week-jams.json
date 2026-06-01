@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-06-01T12:20:18.834Z",
+  "generated_at": "2026-06-01T14:15:04.036Z",
   "jams": [
     {
       "week": 1,
@@ -65,7 +65,32 @@
       "ratings": 9,
       "joined": 0,
       "status": "past",
-      "top_entries": []
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "Nameless Map",
+          "url": "https://sawed-off-studio.itch.io/nameless-map",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NDY2NjQwLnBuZw==/315x250%23c/P5lku4.png",
+          "author": "Sawed-Off Studio",
+          "author_url": "https://sawed-off-studio.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "Aquarium98",
+          "url": "https://superbirdy.itch.io/aquarium98",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NDY2MzE2LnBuZw==/315x250%23c/r6p0RY.png",
+          "author": "SuperBirdy",
+          "author_url": "https://superbirdy.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "Untitled Map Game",
+          "url": "https://jazhikho.itch.io/untitled-map-game",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NDMzODA5LnBuZw==/315x250%23c/xJz3sw.png",
+          "author": "jazhikho",
+          "author_url": "https://jazhikho.itch.io/"
+        }
+      ]
     },
     {
       "week": 3,
@@ -83,7 +108,7 @@
       "voting_end_date": "2026-06-07T20:00:00.000Z",
       "entries": 14,
       "ratings": 0,
-      "joined": 87,
+      "joined": 86,
       "status": "current",
       "top_entries": []
     },
@@ -103,7 +128,7 @@
       "voting_end_date": "2026-06-14T20:00:00.000Z",
       "entries": 0,
       "ratings": 0,
-      "joined": 9,
+      "joined": 13,
       "status": "scheduled",
       "top_entries": []
     }

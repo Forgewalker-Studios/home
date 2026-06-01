@@ -109,3 +109,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-06-01 - One Game a Week Jam #2 results refresh
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io result page inspection.
+- **Task purpose:** Refresh published Week 2 jam rankings so they appear in the past jam archive.
+- **Input materials used:** User report; public itch.io result page for `2gameaweek`; existing generated jam data.
+- **What AI produced:** Refreshed jam data JSON with Week 2 top-three result entries, plus version and assistance log entries.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** Missing Week 2 ranking display.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.

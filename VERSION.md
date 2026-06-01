@@ -58,3 +58,7 @@
 ## 0.0.8.1 - 2026-06-01
 
 - Updated One Game a Week leaderboard standings and participant profile links.
+
+## 0.0.8.2 - 2026-06-01
+
+- Refreshed One Game a Week Jam #2 result rankings after itch.io published the results.
