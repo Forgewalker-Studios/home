@@ -98,3 +98,14 @@
 - **What the user rejected:** Separate current and scheduled jam sections.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-06-01 - One Game a Week leaderboard update
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io search and profile checks.
+- **Task purpose:** Update the overall One Game a Week leaderboard standings and profile links.
+- **Input materials used:** User-provided leaderboard scores; public itch.io profile/search pages for new participants.
+- **What AI produced:** Updated leaderboard JSON, version entry, and assistance log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.

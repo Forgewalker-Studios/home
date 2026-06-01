@@ -54,3 +54,7 @@
 
 - Combined the active One Game a Week jam listings into a three-column status row.
 - Ordered the status row as accepting submissions, voting, and next scheduled jam.
+
+## 0.0.8.1 - 2026-06-01
+
+- Updated One Game a Week leaderboard standings and participant profile links.

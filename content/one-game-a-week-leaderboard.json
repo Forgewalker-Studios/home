@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-05-28T00:00:00.000Z",
+  "generated_at": "2026-06-01T00:00:00.000Z",
   "leaderboard": [
+    {
+      "username": "jazhikho",
+      "score": 30.62,
+      "profile_url": "https://jazhikho.itch.io/"
+    },
     {
       "username": "fizzybones",
       "score": 18.0,
@@ -17,19 +22,24 @@
       "profile_url": "https://kayakalkuhl.itch.io/"
     },
     {
+      "username": "Sawed-Off Studio",
+      "score": 16.5,
+      "profile_url": "https://sawed-off-studio.itch.io/"
+    },
+    {
       "username": "sutashimi",
       "score": 16.5,
       "profile_url": "https://sutashimi.itch.io/"
     },
     {
-      "username": "jazhikho",
-      "score": 16.428,
-      "profile_url": "https://jazhikho.itch.io/"
-    },
-    {
       "username": "SinsRay",
       "score": 15.589,
       "profile_url": "https://sins-ray.itch.io/"
+    },
+    {
+      "username": "SuperBirdy",
+      "score": 14.9,
+      "profile_url": "https://superbirdy.itch.io/"
     },
     {
       "username": "TWI",
@@ -42,9 +52,19 @@
       "profile_url": "https://arslan777vip.itch.io/"
     },
     {
+      "username": "TERA GAMES_OFFICIAL",
+      "score": 12.5,
+      "profile_url": "https://tera-games-official.itch.io/"
+    },
+    {
       "username": "Bullet KINNN",
       "score": 10.477,
       "profile_url": "https://glaciergames.itch.io/"
+    },
+    {
+      "username": "double_mo",
+      "score": 5.5,
+      "profile_url": "https://double-mo.itch.io/"
     }
   ]
 }
