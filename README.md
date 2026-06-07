@@ -24,7 +24,7 @@ This repository is intended to publish through GitHub Pages from the repository 
 - Homepage source: https://github.com/Forgewalker-Studios/home
 - Patreon: https://www.patreon.com/forgewalkerstudios
 - ForgeWalker Studios itch.io: https://forgewalkerstudios.itch.io/
-- Jazhikho about page: https://jazhikho.github.io/about-me/
+- Jazhikho about page: https://forgewalker-studios.github.io/jazhikho/
 
 ## Branding Assets
 

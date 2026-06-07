@@ -62,3 +62,7 @@
 ## 0.0.8.2 - 2026-06-01
 
 - Refreshed One Game a Week Jam #2 result rankings after itch.io published the results.
+
+## 0.0.8.3 - 2026-06-07
+
+- Updated Jazhikho profile and logo links to the ForgeWalker Studios GitHub Pages profile URL.

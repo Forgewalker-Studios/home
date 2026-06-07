@@ -120,3 +120,14 @@
 - **What the user rejected:** Missing Week 2 ranking display.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-06-07 - Jazhikho profile link migration
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public GitHub Pages URL checks.
+- **Task purpose:** Update ForgeWalker Studios site references after the Jazhikho profile moved to the ForgeWalker Studios GitHub Pages domain.
+- **Input materials used:** User-provided new profile URL; existing README and Members page; public GitHub Pages response headers for the new profile and logo asset.
+- **What AI produced:** Updated README and Members page links, version history entry, and this assistance-log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
