@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-06-08T16:38:23.193Z",
+  "generated_at": "2026-06-08T21:03:21.511Z",
   "jams": [
     {
       "week": 1,
@@ -110,7 +110,32 @@
       "ratings": 77,
       "joined": 0,
       "status": "past",
-      "top_entries": []
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "Bierdurst",
+          "url": "https://mysteriousjuice.itch.io/bierdurst",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NjE1MjAzLnBuZw==/315x250%23c/CV3oDx.png",
+          "author": "MysteriousJuice , zaubergurke",
+          "author_url": "https://mysteriousjuice.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "No Order Too Strange",
+          "url": "https://lethargy2718.itch.io/no-order-too-strange",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NjMxNTkxLnBuZw==/315x250%23c/SkbBeL.png",
+          "author": "Lethargy2718",
+          "author_url": "https://lethargy2718.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "Crystal TD",
+          "url": "https://malkas.itch.io/crystal-td",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NjAyODkyLnBuZw==/315x250%23c/hgHbEQ.png",
+          "author": "Malkas",
+          "author_url": "https://malkas.itch.io/"
+        }
+      ]
     },
     {
       "week": 4,
@@ -126,10 +151,10 @@
       "start_date": "2026-06-01T20:00:00.000Z",
       "end_date": "2026-06-08T20:00:00.000Z",
       "voting_end_date": "2026-06-14T20:00:00.000Z",
-      "entries": 7,
-      "ratings": 3,
+      "entries": 6,
+      "ratings": 13,
       "joined": 0,
-      "status": "current",
+      "status": "voting",
       "top_entries": []
     },
     {
@@ -148,7 +173,47 @@
       "voting_end_date": "2026-06-21T20:00:00.000Z",
       "entries": 0,
       "ratings": 0,
-      "joined": 16,
+      "joined": 17,
+      "status": "current",
+      "top_entries": []
+    },
+    {
+      "week": 6,
+      "title": "One Game A Week Jam #6",
+      "url": "https://itch.io/jam/6gameaweek",
+      "entries_url": "https://itch.io/jam/6gameaweek/entries",
+      "results_url": "https://itch.io/jam/6gameaweek/results",
+      "community_url": "https://itch.io/jam/6gameaweek/community",
+      "host": "ForgeWalker Studios",
+      "banner_image": "https://img.itch.zone/aW1nLzI3NzUyNzI4LnBuZw==/original/72eOQ0.png",
+      "image": "https://img.itch.zone/aW1nLzI3NzUyNzI4LnBuZw==/original/72eOQ0.png",
+      "summary": "A game jam from 2026-06-15 to 2026-06-28 hosted by ForgeWalker Studios & jazhikho. One Game A Week Jam #6 One Game A Week Jam is a weekly game jam built around making small, finished games quickly. Each week gives you four scored cha...",
+      "start_date": "2026-06-15T20:00:00.000Z",
+      "end_date": "2026-06-22T20:00:00.000Z",
+      "voting_end_date": "2026-06-28T21:53:24.000Z",
+      "entries": 0,
+      "ratings": 0,
+      "joined": 1,
+      "status": "scheduled",
+      "top_entries": []
+    },
+    {
+      "week": 7,
+      "title": "One Game A Week Jam #7",
+      "url": "https://itch.io/jam/7gameaweek",
+      "entries_url": "https://itch.io/jam/7gameaweek/entries",
+      "results_url": "https://itch.io/jam/7gameaweek/results",
+      "community_url": "https://itch.io/jam/7gameaweek/community",
+      "host": "ForgeWalker Studios",
+      "banner_image": "https://img.itch.zone/aW1nLzI3NzUzMjA3LnBuZw==/original/kITckL.png",
+      "image": "https://img.itch.zone/aW1nLzI3NzUzMjA3LnBuZw==/original/kITckL.png",
+      "summary": "A game jam from 2026-06-22 to 2026-07-05 hosted by ForgeWalker Studios. One Game A Week Jam #7 One Game A Week Jam is a weekly game jam built around making small, finished games quickly. Each week gives you four scored cha...",
+      "start_date": "2026-06-22T20:00:00.000Z",
+      "end_date": "2026-06-29T20:00:00.000Z",
+      "voting_end_date": "2026-07-05T20:00:00.000Z",
+      "entries": 0,
+      "ratings": 0,
+      "joined": 0,
       "status": "scheduled",
       "top_entries": []
     }
