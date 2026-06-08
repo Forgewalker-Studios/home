@@ -121,6 +121,17 @@
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
 
+## 2026-06-08 - One Game a Week Week 3 leaderboard
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io Week 3 result page inspection.
+- **Task purpose:** Update the overall One Game a Week leaderboard through Week 3 and preserve tied rank numbers.
+- **Input materials used:** User-provided Week 3 leaderboard standings; public itch.io result/profile links for new participants.
+- **What AI produced:** Updated leaderboard JSON with explicit ranks and profile links, tied-rank rendering support, cache-busting update, version entry, and assistance log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** Previous leaderboard standings.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
+
 ## 2026-06-07 - Jazhikho profile link migration
 
 - **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public GitHub Pages URL checks.

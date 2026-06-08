@@ -75,9 +75,11 @@ async function testLeaderboardData() {
     const entry = entries[index];
     assert.ok(entry.username, `Leaderboard entry ${index + 1} must include a username`);
     assert.ok(Number.isFinite(Number(entry.score)), `Leaderboard entry ${index + 1} must include a numeric score`);
+    assert.ok(Number.isInteger(Number(entry.rank)), `Leaderboard entry ${index + 1} must include an integer rank`);
     assert.ok(entry.profile_url.startsWith("https://"), `Leaderboard entry ${index + 1} must include a profile URL`);
 
     if (index > 0) {
+      assert.ok(Number(entries[index - 1].rank) <= Number(entry.rank), "Leaderboard ranks should be sorted ascending");
       assert.ok(Number(entries[index - 1].score) >= Number(entry.score), "Leaderboard scores should be sorted descending");
     }
   }

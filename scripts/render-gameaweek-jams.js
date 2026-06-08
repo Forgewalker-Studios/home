@@ -27,7 +27,7 @@ async function initJamPage() {
   }
 
   try {
-    const leaderboardResponse = await fetch(`${leaderboardDataUrl}?v=20260528-active-row`, { cache: "no-store" });
+    const leaderboardResponse = await fetch(`${leaderboardDataUrl}?v=20260608-leaderboard`, { cache: "no-store" });
 
     if (!leaderboardResponse.ok) {
       throw new Error(`Unable to load leaderboard: ${leaderboardResponse.status}`);
@@ -224,7 +224,12 @@ function createPodiumList(entries) {
 function initLeaderboard(data) {
   leaderboardEntries = [...(data.leaderboard ?? [])]
     .filter((entry) => entry.username && Number.isFinite(Number(entry.score)))
-    .sort((left, right) => Number(right.score) - Number(left.score));
+    .sort((left, right) => {
+      const leftRank = Number(left.rank ?? Number.POSITIVE_INFINITY);
+      const rightRank = Number(right.rank ?? Number.POSITIVE_INFINITY);
+
+      return leftRank - rightRank || Number(right.score) - Number(left.score);
+    });
   leaderboardPage = 0;
   leaderboardQuery = "";
 
@@ -277,7 +282,10 @@ function renderLeaderboard() {
     empty.textContent = "No leaderboard entries match that search.";
     container.append(empty);
   } else {
-    page.forEach((entry) => container.append(createLeaderboardRow(entry, leaderboardEntries.indexOf(entry) + 1)));
+    page.forEach((entry) => {
+      const index = leaderboardEntries.indexOf(entry);
+      container.append(createLeaderboardRow(entry, getLeaderboardRank(entry, index)));
+    });
   }
 
   if (count) {
@@ -320,6 +328,11 @@ function createLeaderboardRow(entry, rank) {
 
   row.append(place, profile, score);
   return row;
+}
+
+function getLeaderboardRank(entry, index) {
+  const rank = Number(entry.rank);
+  return Number.isFinite(rank) ? rank : index + 1;
 }
 
 function addStat(list, label, value) {

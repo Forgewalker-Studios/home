@@ -66,3 +66,8 @@
 ## 0.0.8.3 - 2026-06-07
 
 - Updated Jazhikho profile and logo links to the ForgeWalker Studios GitHub Pages profile URL.
+
+## 0.0.8.4 - 2026-06-08
+
+- Updated One Game a Week leaderboard standings through Week 3.
+- Added explicit tied-rank support for the leaderboard display.
