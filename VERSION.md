@@ -71,3 +71,7 @@
 
 - Updated One Game a Week leaderboard standings through Week 3.
 - Added explicit tied-rank support for the leaderboard display.
+
+## 0.0.8.5 - 2026-06-10
+
+- Added the updated One Game a Week Discord invite link.

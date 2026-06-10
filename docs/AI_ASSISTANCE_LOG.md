@@ -132,6 +132,17 @@
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
 
+## 2026-06-10 - One Game a Week Discord link
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell.
+- **Task purpose:** Update the One Game a Week public Discord invite link.
+- **Input materials used:** User-provided Discord invite URL; existing 1G1W page.
+- **What AI produced:** A visible Discord action link on the 1G1W page, plus version and assistance log entries.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
+
 ## 2026-06-07 - Jazhikho profile link migration
 
 - **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public GitHub Pages URL checks.
