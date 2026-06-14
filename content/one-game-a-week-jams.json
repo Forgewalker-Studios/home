@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-06-14T14:57:42.413Z",
+  "generated_at": "2026-06-14T20:09:13.422Z",
   "jams": [
     {
       "week": 1,
@@ -154,8 +154,33 @@
       "entries": 6,
       "ratings": 24,
       "joined": 0,
-      "status": "voting",
-      "top_entries": []
+      "status": "past",
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "12th Hour",
+          "url": "https://armored98.itch.io/12th-hour",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NzM2NDkzLnBuZw==/315x250%23c/Gq7o7W.png",
+          "author": "Armored98",
+          "author_url": "https://armored98.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "Cardtime",
+          "url": "https://ella-x.itch.io/cardtime",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NzEzNjQ2LmpwZWc=/315x250%23c/hBU632.jpeg",
+          "author": "Ella_X",
+          "author_url": "https://ella-x.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "[ CARD GAME ]",
+          "url": "https://linesgames.itch.io/card-game",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3NzQyMzc5LmpwZw==/315x250%23c/gA1G5P.jpg",
+          "author": "Line's Games",
+          "author_url": "https://linesgames.itch.io/"
+        }
+      ]
     },
     {
       "week": 5,
@@ -193,7 +218,7 @@
       "voting_end_date": "2026-06-28T21:53:24.000Z",
       "entries": 0,
       "ratings": 0,
-      "joined": 13,
+      "joined": 15,
       "status": "scheduled",
       "top_entries": []
     },
