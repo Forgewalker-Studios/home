@@ -75,3 +75,7 @@
 ## 0.0.8.5 - 2026-06-10
 
 - Added the updated One Game a Week Discord invite link.
+
+## 0.0.8.6 - 2026-06-14
+
+- Updated One Game a Week leaderboard standings and participant profile links.

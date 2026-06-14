@@ -27,7 +27,7 @@ async function initJamPage() {
   }
 
   try {
-    const leaderboardResponse = await fetch(`${leaderboardDataUrl}?v=20260608-leaderboard`, { cache: "no-store" });
+    const leaderboardResponse = await fetch(`${leaderboardDataUrl}?v=20260614-leaderboard`, { cache: "no-store" });
 
     if (!leaderboardResponse.ok) {
       throw new Error(`Unable to load leaderboard: ${leaderboardResponse.status}`);

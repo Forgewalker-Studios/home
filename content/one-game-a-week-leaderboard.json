@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-08T00:00:00.000Z",
+  "generated_at": "2026-06-14T00:00:00.000Z",
   "leaderboard": [
     {
       "rank": 1,
-      "username": "jazhikho",
-      "score": 30.62,
-      "profile_url": "https://jazhikho.itch.io/"
+      "username": "Sawed-Off Studio",
+      "score": 40.0,
+      "profile_url": "https://sawed-off-studio.itch.io/"
     },
     {
       "rank": 2,
-      "username": "Sawed-Off Studio",
-      "score": 29.0,
-      "profile_url": "https://sawed-off-studio.itch.io/"
+      "username": "jazhikho",
+      "score": 30.62,
+      "profile_url": "https://jazhikho.itch.io/"
     },
     {
       "rank": 3,
@@ -27,6 +27,12 @@
     },
     {
       "rank": 5,
+      "username": "Armored98",
+      "score": 17.5,
+      "profile_url": "https://armored98.itch.io/"
+    },
+    {
+      "rank": 5,
       "username": "MysteriousJuice",
       "score": 17.5,
       "profile_url": "https://mysteriousjuice.itch.io/"
@@ -38,145 +44,169 @@
       "profile_url": "https://zaubergurke.itch.io/"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "username": "Kayakalkuhl",
       "score": 16.685,
       "profile_url": "https://kayakalkuhl.itch.io/"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "username": "sutashimi",
       "score": 16.5,
       "profile_url": "https://sutashimi.itch.io/"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "username": "Lethargy2718",
       "score": 16.125,
       "profile_url": "https://lethargy2718.itch.io/"
     },
     {
-      "rank": 10,
+      "rank": 11,
+      "username": "Ella_X",
+      "score": 15.75,
+      "profile_url": "https://ella-x.itch.io/"
+    },
+    {
+      "rank": 12,
       "username": "Malkas",
       "score": 15.667,
       "profile_url": "https://malkas.itch.io/"
     },
     {
-      "rank": 11,
+      "rank": 13,
       "username": "SinsRay",
       "score": 15.589,
       "profile_url": "https://sins-ray.itch.io/"
     },
     {
-      "rank": 12,
+      "rank": 14,
       "username": "PepperSanders",
       "score": 15.103,
       "profile_url": "https://peppersanders.itch.io/"
     },
     {
-      "rank": 13,
+      "rank": 15,
       "username": "SuperBirdy",
       "score": 14.9,
       "profile_url": "https://superbirdy.itch.io/"
     },
     {
-      "rank": 14,
+      "rank": 16,
       "username": "TWI",
       "score": 14.833,
       "profile_url": "https://twigames.itch.io/"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "username": "Lenway",
       "score": 14.6,
       "profile_url": "https://lenwaydev.itch.io/"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "username": "Arslan",
       "score": 14.333,
       "profile_url": "https://arslan777vip.itch.io/"
     },
     {
-      "rank": 17,
+      "rank": 19,
       "username": "CieloForge",
       "score": 14.25,
       "profile_url": "https://cieloforge.itch.io/"
     },
     {
-      "rank": 18,
+      "rank": 19,
+      "username": "Line's Games",
+      "score": 14.25,
+      "profile_url": "https://linesgames.itch.io/"
+    },
+    {
+      "rank": 21,
       "username": "Lazyanttu",
       "score": 12.5,
       "profile_url": "https://lazyanttu.itch.io/"
     },
     {
-      "rank": 18,
+      "rank": 21,
       "username": "TERA GAMES_OFFICIAL",
       "score": 12.5,
       "profile_url": "https://tera-games-official.itch.io/"
     },
     {
-      "rank": 20,
+      "rank": 23,
       "username": "Jon Programer",
       "score": 12.25,
       "profile_url": "https://jonprogramer.itch.io/"
     },
     {
-      "rank": 21,
+      "rank": 24,
       "username": "ZapatoElf",
       "score": 12.083,
       "profile_url": "https://zapatoelfa.itch.io/"
     },
     {
-      "rank": 22,
+      "rank": 25,
+      "username": "mashromite",
+      "score": 12.0,
+      "profile_url": "https://mashromite.itch.io/"
+    },
+    {
+      "rank": 26,
       "username": "allanrj",
       "score": 11.858,
       "profile_url": "https://allanrj.itch.io/"
     },
     {
-      "rank": 23,
+      "rank": 27,
       "username": "JanoGamer",
       "score": 11.286,
       "profile_url": "https://janogamer.itch.io/"
     },
     {
-      "rank": 24,
+      "rank": 28,
       "username": "Bullet KINNN",
       "score": 10.477,
       "profile_url": "https://glaciergames.itch.io/"
     },
     {
-      "rank": 25,
+      "rank": 29,
       "username": "ILoveEveryone24",
       "score": 10.011,
       "profile_url": "https://iloveeveryone24.itch.io/"
     },
     {
-      "rank": 26,
+      "rank": 30,
       "username": "BIG SOK",
       "score": 9.0,
       "profile_url": "https://big-sok.itch.io/"
     },
     {
-      "rank": 27,
+      "rank": 31,
+      "username": "Zer0Delta",
+      "score": 8.75,
+      "profile_url": "https://zer0delta.itch.io/"
+    },
+    {
+      "rank": 32,
       "username": "malikappletoe",
       "score": 6.89,
       "profile_url": "https://malikappletoe.itch.io/"
     },
     {
-      "rank": 28,
+      "rank": 33,
       "username": "shadesmar_wanderer",
       "score": 5.89,
       "profile_url": "https://tulsisvtgmailcom.itch.io/"
     },
     {
-      "rank": 29,
+      "rank": 34,
       "username": "double_mo",
       "score": 5.5,
       "profile_url": "https://double-mo.itch.io/"
     },
     {
-      "rank": 30,
+      "rank": 35,
       "username": "Paramus",
       "score": 3.121,
       "profile_url": "https://paramus.itch.io/"
