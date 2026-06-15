@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-06-15T12:53:00.015Z",
+  "generated_at": "2026-06-15T21:35:36.576Z",
   "jams": [
     {
       "week": 1,
@@ -196,10 +196,10 @@
       "start_date": "2026-06-08T20:00:00.000Z",
       "end_date": "2026-06-15T20:00:00.000Z",
       "voting_end_date": "2026-06-21T20:00:00.000Z",
-      "entries": 6,
-      "ratings": 0,
-      "joined": 23,
-      "status": "current",
+      "entries": 8,
+      "ratings": 8,
+      "joined": 0,
+      "status": "voting",
       "top_entries": []
     },
     {
@@ -218,8 +218,8 @@
       "voting_end_date": "2026-06-28T21:53:24.000Z",
       "entries": 0,
       "ratings": 0,
-      "joined": 20,
-      "status": "scheduled",
+      "joined": 26,
+      "status": "current",
       "top_entries": []
     },
     {
@@ -232,13 +232,33 @@
       "host": "ForgeWalker Studios",
       "banner_image": "https://img.itch.zone/aW1nLzI3NzUzMjA3LnBuZw==/original/kITckL.png",
       "image": "https://img.itch.zone/aW1nLzI3NzUzMjA3LnBuZw==/original/kITckL.png",
-      "summary": "A game jam from 2026-06-22 to 2026-07-05 hosted by ForgeWalker Studios. One Game A Week Jam #7 Discord server: https://discord.gg/KGveNz6K One Game A Week Jam is a weekly game jam built around making small, finished games...",
+      "summary": "A game jam from 2026-06-22 to 2026-07-05 hosted by ForgeWalker Studios & jazhikho. One Game A Week Jam #7 Discord server: https://discord.gg/KGveNz6K One Game A Week Jam is a weekly game jam built around making small, finished games...",
       "start_date": "2026-06-22T20:00:00.000Z",
       "end_date": "2026-06-29T20:00:00.000Z",
       "voting_end_date": "2026-07-05T20:00:00.000Z",
       "entries": 0,
       "ratings": 0,
-      "joined": 2,
+      "joined": 4,
+      "status": "scheduled",
+      "top_entries": []
+    },
+    {
+      "week": 8,
+      "title": "One Game A Week Jam #8",
+      "url": "https://itch.io/jam/8gameaweek",
+      "entries_url": "https://itch.io/jam/8gameaweek/entries",
+      "results_url": "https://itch.io/jam/8gameaweek/results",
+      "community_url": "https://itch.io/jam/8gameaweek/community",
+      "host": "ForgeWalker Studios",
+      "banner_image": "https://img.itch.zone/aW1nLzI3ODkwMDU3LnBuZw==/original/7vwj01.png",
+      "image": "https://img.itch.zone/aW1nLzI3ODkwMDU3LnBuZw==/original/7vwj01.png",
+      "summary": "A game jam from 2026-06-29 to 2026-07-12 hosted by ForgeWalker Studios & jazhikho. One Game A Week Jam #8 Discord server: https://discord.gg/KGveNz6K One Game A Week Jam is a weekly game jam built around making small, finished games...",
+      "start_date": "2026-06-29T20:00:00.000Z",
+      "end_date": "2026-07-06T20:00:00.000Z",
+      "voting_end_date": "2026-07-12T20:00:00.000Z",
+      "entries": 0,
+      "ratings": 0,
+      "joined": 0,
       "status": "scheduled",
       "top_entries": []
     }
