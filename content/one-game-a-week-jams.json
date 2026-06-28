@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-06-28T14:25:37.188Z",
+  "generated_at": "2026-06-28T19:56:47.347Z",
   "jams": [
     {
       "week": 1,
@@ -242,10 +242,35 @@
       "end_date": "2026-06-22T20:00:00.000Z",
       "voting_end_date": "2026-06-28T21:53:24.000Z",
       "entries": 4,
-      "ratings": 7,
+      "ratings": 6,
       "joined": 0,
       "status": "voting",
-      "top_entries": []
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "The Door Remembers",
+          "url": "https://sawed-off-studio.itch.io/the-door-remembers",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MDIyODk2LnBuZw==/315x250%23c/Vm4BSa.png",
+          "author": "Sawed-Off Studio",
+          "author_url": "https://sawed-off-studio.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "Loss of Containment",
+          "url": "https://iloveeveryone24.itch.io/loss-of-containment",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MDEyMTgxLnBuZw==/315x250%23c/6%2BxhPQ.png",
+          "author": "ILoveEveryone24",
+          "author_url": "https://iloveeveryone24.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "Project Clanker",
+          "url": "https://jazhikho.itch.io/project-clanker",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MDIzNDMxLnBuZw==/315x250%23c/6rE8Mr.png",
+          "author": "jazhikho , KennyLumpia",
+          "author_url": "https://jazhikho.itch.io/"
+        }
+      ]
     },
     {
       "week": 7,
@@ -283,7 +308,7 @@
       "voting_end_date": "2026-07-12T20:00:00.000Z",
       "entries": 0,
       "ratings": 0,
-      "joined": 27,
+      "joined": 35,
       "status": "scheduled",
       "top_entries": []
     }
