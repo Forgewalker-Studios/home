@@ -87,3 +87,7 @@
 ## 0.0.8.8 - 2026-06-21
 
 - Updated the 1G1W page script cache key for the latest leaderboard data.
+
+## 0.0.8.9 - 2026-06-29
+
+- Updated One Game a Week leaderboard standings and participant profile links.

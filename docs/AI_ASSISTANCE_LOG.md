@@ -175,3 +175,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-06-29 - One Game a Week leaderboard update
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io profile check.
+- **Task purpose:** Update the overall One Game a Week leaderboard standings.
+- **Input materials used:** User-provided leaderboard scores; public itch.io profile page for the new participant link.
+- **What AI produced:** Updated leaderboard JSON, cache-busting update, version entry, and assistance log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
