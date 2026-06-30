@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-06-30T04:48:52.297Z",
+  "generated_at": "2026-06-30T10:18:07.685Z",
   "jams": [
     {
       "week": 1,
@@ -306,9 +306,9 @@
       "start_date": "2026-06-29T20:00:00.000Z",
       "end_date": "2026-07-06T20:00:00.000Z",
       "voting_end_date": "2026-07-12T20:00:00.000Z",
-      "entries": 0,
+      "entries": 3,
       "ratings": 0,
-      "joined": 68,
+      "joined": 67,
       "status": "current",
       "top_entries": []
     }
