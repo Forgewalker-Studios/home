@@ -91,3 +91,7 @@
 ## 0.0.8.9 - 2026-06-29
 
 - Updated One Game a Week leaderboard standings and participant profile links.
+
+## 0.0.8.10 - 2026-07-06
+
+- Updated One Game a Week leaderboard standings and participant profile links.
