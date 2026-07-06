@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-07-06T11:14:54.830Z",
+  "generated_at": "2026-07-06T16:04:10.122Z",
   "jams": [
     {
       "week": 1,
@@ -290,7 +290,32 @@
       "ratings": 9,
       "joined": 0,
       "status": "past",
-      "top_entries": []
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "Space Arcade",
+          "url": "https://coderboy-100.itch.io/space-arcade",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MTQ5MjgxLnBuZw==/315x250%23c/HpajLj.png",
+          "author": "Coderboy_100",
+          "author_url": "https://coderboy-100.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "Signal Rift",
+          "url": "https://jazhikho.itch.io/signal-rift",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MTU1NDc3LnBuZw==/315x250%23c/Fj89w1.png",
+          "author": "jazhikho",
+          "author_url": "https://jazhikho.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "space shooter",
+          "url": "https://ka1919.itch.io/space-shooter",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MDY0OTQ5LnBuZw==/315x250%23c/RiRBHn.png",
+          "author": "Ka1919",
+          "author_url": "https://ka1919.itch.io/"
+        }
+      ]
     },
     {
       "week": 8,
@@ -306,9 +331,9 @@
       "start_date": "2026-06-29T20:00:00.000Z",
       "end_date": "2026-07-06T20:00:00.000Z",
       "voting_end_date": "2026-07-12T20:00:00.000Z",
-      "entries": 12,
+      "entries": 18,
       "ratings": 0,
-      "joined": 67,
+      "joined": 0,
       "status": "current",
       "top_entries": []
     },
@@ -328,7 +353,7 @@
       "voting_end_date": "2026-07-19T20:00:28.000Z",
       "entries": 0,
       "ratings": 0,
-      "joined": 19,
+      "joined": 29,
       "status": "scheduled",
       "top_entries": []
     },
