@@ -1,5 +1,10 @@
 # Version History
 
+## 0.0.9.1 - 2026-07-16
+
+- Replaced the broken external Whichever Way cover URL with a local member-profile image asset.
+- Removed placeholder implementation wording from KennyLumpia's public profile copy.
+
 ## 0.0.9.0 - 2026-07-16
 
 - Added KennyLumpia to the public member roster.

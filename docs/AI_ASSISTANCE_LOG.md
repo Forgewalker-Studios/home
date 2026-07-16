@@ -219,3 +219,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** Supplied customization answers and confirmed both Whichever Way and Project Clanker should be featured.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-07-16 - KennyLumpia cover art fix
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io project page inspection.
+- **Task purpose:** Fix the missing Whichever Way cover art on KennyLumpia's member profile and remove public-facing placeholder commentary.
+- **Input materials used:** User report; KennyLumpia Whichever Way itch.io page metadata; existing KennyLumpia profile page and Members roster.
+- **What AI produced:** Local Whichever Way cover asset, updated image references, cleaned profile copy, version history entry, and this assistance-log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** Broken external cover URL and public-facing meta commentary.
+- **What the user changed:** Reported the issue and clarified that meta commentary should not appear on the web.
+- **Who approved the final version:** Pending user approval.
