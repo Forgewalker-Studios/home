@@ -1,5 +1,11 @@
 # Version History
 
+## 0.0.9.0 - 2026-07-16
+
+- Added KennyLumpia to the public member roster.
+- Added a dedicated KennyLumpia member profile page with itch.io links and featured work.
+- Featured Whichever Way and Project Clanker on KennyLumpia's profile.
+
 ## 0.0.1.0 - 2026-05-27
 
 - Added the initial ForgeWalker Studios GitHub Pages homepage.

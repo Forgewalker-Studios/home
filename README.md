@@ -8,7 +8,8 @@ Static GitHub Pages homepage for ForgeWalker Studios.
 - `work.html` - public member work
 - `1g1w.html` - One Game a Week Jam hub
 - `about.html` - studio purpose and workflow principles
-- `members.html` - current member profile
+- `members.html` - current member roster
+- `kennylumpia.html` - KennyLumpia member profile
 - `support.html` - Patreon, itch.io, and GitHub links
 
 ## Local Preview
@@ -25,6 +26,7 @@ This repository is intended to publish through GitHub Pages from the repository 
 - Patreon: https://www.patreon.com/forgewalkerstudios
 - ForgeWalker Studios itch.io: https://forgewalkerstudios.itch.io/
 - Jazhikho about page: https://forgewalker-studios.github.io/jazhikho/
+- KennyLumpia itch.io: https://kennylumpia.itch.io/
 
 ## Branding Assets
 

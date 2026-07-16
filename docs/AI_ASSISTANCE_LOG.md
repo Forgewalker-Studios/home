@@ -208,3 +208,14 @@
 - **What the user rejected:** None recorded yet.
 - **What the user changed:** None recorded yet.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-07-16 - KennyLumpia member profile
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io profile and project page inspection.
+- **Task purpose:** Add KennyLumpia to the ForgeWalker Studios member roster and create a customizable member profile based on the existing Jazhikho member presentation.
+- **Input materials used:** User-provided display name, title, tags, image preference, link preference, dark grey color direction, and featured-work direction; existing Members page; KennyLumpia public itch.io profile; Whichever Way project page; existing One Game a Week jam data for Project Clanker.
+- **What AI produced:** Updated Members page roster, new KennyLumpia profile page with a dark grey visual treatment, shared CSS additions, README update, version history entry, and this assistance-log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** Supplied customization answers and confirmed both Whichever Way and Project Clanker should be featured.
+- **Who approved the final version:** Pending user approval.

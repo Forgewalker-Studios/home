@@ -43,6 +43,22 @@ body {
   line-height: 1.6;
 }
 
+body.kenny-profile {
+  --forge: #b7b5af;
+  --forge-soft: #e3e0d8;
+  --line-warm: rgba(202, 199, 190, 0.24);
+  --surface-warm: rgba(24, 25, 25, 0.96);
+  --surface-strong: #252727;
+  background:
+    linear-gradient(180deg, #171818 0%, #101111 46%, #080909 100%);
+}
+
+body.kenny-profile .button.primary {
+  background: linear-gradient(135deg, #f0eee8, #8d8b85);
+  color: #111;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -719,6 +735,16 @@ p {
   padding: clamp(1.4rem, 4vw, 3rem);
 }
 
+.member-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.kenny-member-card {
+  border-color: rgba(202, 199, 190, 0.24);
+  background: linear-gradient(160deg, rgba(30, 31, 31, 0.96), rgba(9, 10, 10, 0.94));
+}
+
 .member-logo {
   width: min(100%, 260px);
   justify-self: center;
@@ -726,6 +752,25 @@ p {
   border-radius: var(--radius);
   background: rgba(7, 8, 8, 0.65);
   box-shadow: var(--shadow);
+}
+
+.member-logo-cover {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  max-width: 12ch;
+}
+
+.profile-note {
+  color: var(--quiet);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.member-work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .tag-list {
