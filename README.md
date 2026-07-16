@@ -10,6 +10,7 @@ Static GitHub Pages homepage for ForgeWalker Studios.
 - `about.html` - studio purpose and workflow principles
 - `members.html` - current member roster
 - `kennylumpia.html` - KennyLumpia member profile
+- `joel-croteau.html` - Joel Croteau member profile
 - `support.html` - Patreon, itch.io, and GitHub links
 
 ## Local Preview
@@ -27,6 +28,7 @@ This repository is intended to publish through GitHub Pages from the repository 
 - ForgeWalker Studios itch.io: https://forgewalkerstudios.itch.io/
 - Jazhikho about page: https://forgewalker-studios.github.io/jazhikho/
 - KennyLumpia itch.io: https://kennylumpia.itch.io/
+- Joel Croteau GitHub: https://github.com/TV4Fun
 
 ## Branding Assets
 

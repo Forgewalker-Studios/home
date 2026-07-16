@@ -230,3 +230,25 @@
 - **What the user rejected:** Broken external cover URL and public-facing meta commentary.
 - **What the user changed:** Reported the issue and clarified that meta commentary should not appear on the web.
 - **Who approved the final version:** Pending user approval.
+
+## 2026-07-16 - Joel member profile proposal
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public GitHub profile and repository inspection; public web search for LinkedIn snippet.
+- **Task purpose:** Research public source material for Joel Croteau / TV4Fun and prepare an approval-ready member profile proposal before adding him to the public site.
+- **Input materials used:** User-provided GitHub, Dubiously Professional, and LinkedIn URLs; public TV4Fun GitHub profile and repositories; public Dubiously Professional GitHub organization and repositories; public LinkedIn search result snippet.
+- **What AI produced:** Draft Joel member profile proposal with source notes, suggested display name, role, bio copy, tags, links, featured work candidates, and approval questions; the standalone proposal file was removed when the user requested direct implementation.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** The intermediate proposal-document workflow.
+- **What the user changed:** Asked for a proposal Joel can approve or disapprove before implementation.
+- **Who approved the final version:** Pending Joel/user approval.
+
+## 2026-07-16 - Joel member profile implementation
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public GitHub profile and repository inspection; user-supplied portrait image.
+- **Task purpose:** Add Joel Croteau to the ForgeWalker Studios member roster and build a dedicated member profile page.
+- **Input materials used:** User-provided name, title, background language, tags, preferred social links, featured-project direction, and portrait; public TV4Fun GitHub profile and repositories; public Dubiously Professional organization and repository metadata.
+- **What AI produced:** Updated Members page roster, new Joel Croteau profile page, local portrait asset, shared CSS additions, README update, version history entry, and this assistance-log entry.
+- **What the user accepted:** Programmer / Data and Simulation Systems title; broad software engineering, data engineering, data science, and systems science background language; Threads and raphus.social links; Joel Croteau display name.
+- **What the user rejected:** Twitter/X link, ScaleTech Mecha as a featured project, and further proposal iteration before implementation.
+- **What the user changed:** Directed the page to include systems science and ethnocentrism-cpp.
+- **Who approved the final version:** Pending user review.

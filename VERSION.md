@@ -1,5 +1,11 @@
 # Version History
 
+## 0.0.10.0 - 2026-07-16
+
+- Added Joel Croteau to the public member roster.
+- Added a dedicated Joel Croteau member profile page with approved links and portrait.
+- Featured Joel's data, simulation, systems science, and programming work.
+
 ## 0.0.9.1 - 2026-07-16
 
 - Replaced the broken external Whichever Way cover URL with a local member-profile image asset.

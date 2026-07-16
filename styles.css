@@ -59,6 +59,23 @@ body.kenny-profile .button.primary {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
+body.joel-profile {
+  --forge: #6fa8ff;
+  --forge-soft: #a9c8ff;
+  --line-warm: rgba(111, 168, 255, 0.28);
+  --surface-warm: rgba(14, 21, 37, 0.96);
+  --surface-strong: #17233d;
+  background:
+    radial-gradient(circle at 84% 6%, rgba(111, 168, 255, 0.16), transparent 24rem),
+    linear-gradient(180deg, #101827 0%, #0b1020 48%, #070911 100%);
+}
+
+body.joel-profile .button.primary {
+  background: linear-gradient(135deg, #a9c8ff, #2e5fa8);
+  color: #071021;
+  box-shadow: 0 12px 28px rgba(46, 95, 168, 0.28);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -745,6 +762,11 @@ p {
   background: linear-gradient(160deg, rgba(30, 31, 31, 0.96), rgba(9, 10, 10, 0.94));
 }
 
+.joel-member-card {
+  border-color: rgba(111, 168, 255, 0.26);
+  background: linear-gradient(160deg, rgba(14, 21, 37, 0.96), rgba(7, 9, 17, 0.94));
+}
+
 .member-logo {
   width: min(100%, 260px);
   justify-self: center;
@@ -759,12 +781,39 @@ p {
   object-fit: cover;
 }
 
+.member-logo-portrait {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 28%;
+}
+
 .profile-card h2 {
   max-width: 12ch;
 }
 
 .member-work-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.profile-link-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-link-list a {
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.profile-link-list a:hover {
+  color: var(--forge-soft);
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
 }
 
 .tag-list {
@@ -846,7 +895,8 @@ p {
   .project-grid,
   .project-grid.wide,
   .jam-grid,
-  .support-grid {
+  .support-grid,
+  .member-work-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -864,7 +914,8 @@ p {
   .hero,
   .split-section,
   .jam-card,
-  .member-card {
+  .member-card,
+  .profile-link-list {
     grid-template-columns: 1fr;
   }
 
