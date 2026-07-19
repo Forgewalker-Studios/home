@@ -1,5 +1,9 @@
 # Version History
 
+## 0.0.10.1 - 2026-07-19
+
+- Updated One Game a Week leaderboard standings and participant profile links.
+
 ## 0.0.10.0 - 2026-07-16
 
 - Added Joel Croteau to the public member roster.

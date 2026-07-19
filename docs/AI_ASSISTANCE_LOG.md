@@ -252,3 +252,14 @@
 - **What the user rejected:** Twitter/X link, ScaleTech Mecha as a featured project, and further proposal iteration before implementation.
 - **What the user changed:** Directed the page to include systems science and ethnocentrism-cpp.
 - **Who approved the final version:** Pending user review.
+
+## 2026-07-19 - One Game a Week leaderboard update
+
+- **Model/tool used:** GPT-5 Codex in the Codex desktop app; local shell; public itch.io profile checks and web search for ambiguous profile slugs.
+- **Task purpose:** Update the overall One Game a Week leaderboard standings.
+- **Input materials used:** User-provided leaderboard scores; public itch.io profile pages for new participant links.
+- **What AI produced:** Updated leaderboard JSON, cache-busting update, version entry, and assistance log entry.
+- **What the user accepted:** Pending user review.
+- **What the user rejected:** None recorded yet.
+- **What the user changed:** None recorded yet.
+- **Who approved the final version:** Pending user approval.
