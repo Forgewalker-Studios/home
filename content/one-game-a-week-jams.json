@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-08-07T00:27:52.604Z",
+  "generated_at": "2026-08-07T13:55:38.921Z",
   "jams": [
     {
       "week": 1,
@@ -335,32 +335,7 @@
       "ratings": 76,
       "joined": 0,
       "status": "past",
-      "top_entries": [
-        {
-          "rank": "1st",
-          "title": "Flowers That Bloom",
-          "url": "https://0-mike.itch.io/flowers-that-bloom",
-          "thumbnail": "https://img.itch.zone/aW1nLzI4MzI0MTI1LnBuZw==/315x250%23c/eQgh7z.png",
-          "author": "𝐦𝐢𝐤𝐞",
-          "author_url": "https://0-mike.itch.io/"
-        },
-        {
-          "rank": "2nd",
-          "title": "Mirrored Control",
-          "url": "https://guicm.itch.io/mirrored-control",
-          "thumbnail": "https://img.itch.zone/aW1nLzI4MzEzMzY5LnBuZw==/315x250%23c/zOyGMQ.png",
-          "author": "GuiCM",
-          "author_url": "https://guicm.itch.io/"
-        },
-        {
-          "rank": "3rd",
-          "title": "Hip & Hop",
-          "url": "https://cosynyx.itch.io/hip-hop",
-          "thumbnail": "https://img.itch.zone/aW1nLzI4MjQ5NTc5LnBuZw==/315x250%23c/hJWZ%2F7.png",
-          "author": "cosynyx",
-          "author_url": "https://cosynyx.itch.io/"
-        }
-      ]
+      "top_entries": []
     },
     {
       "week": 9,
