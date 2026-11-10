@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-11-09T07:07:55.200Z",
+  "generated_at": "2026-11-10T19:58:54.689Z",
   "jams": [
     {
       "week": 1,
@@ -425,7 +425,32 @@
       "ratings": 39,
       "joined": 0,
       "status": "past",
-      "top_entries": []
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "Reflection",
+          "url": "https://sadcolourfulhues.itch.io/reflection",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4NjIwMzM2LnBuZw==/315x250%23c/6jiSre.png",
+          "author": "SCHAppDev",
+          "author_url": "https://sadcolourfulhues.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "Vacuum Cave",
+          "url": "https://radapple2539.itch.io/vacuum-cave",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4NjIzNjYwLnBuZw==/315x250%23c/wafnRR.png",
+          "author": "Rad Apple",
+          "author_url": "https://radapple2539.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "Dragon's Debt",
+          "url": "https://gabesdev.itch.io/dragons-debt",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4NTcxMzMwLnBuZw==/315x250%23c/3%2Bsv%2FZ.png",
+          "author": "GabeDev",
+          "author_url": "https://gabesdev.itch.io/"
+        }
+      ]
     },
     {
       "week": 11,
