@@ -1,6 +1,6 @@
 {
   "source_pattern": "https://itch.io/jam/#gameaweek",
-  "generated_at": "2026-11-27T09:01:03.104Z",
+  "generated_at": "2026-11-27T21:36:31.772Z",
   "jams": [
     {
       "week": 1,
@@ -200,7 +200,32 @@
       "ratings": 19,
       "joined": 0,
       "status": "past",
-      "top_entries": []
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "The Thread of the Dying Word",
+          "url": "https://intjt2.itch.io/the-thread-of-the-dying-word",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3ODA3Mzg1LmpwZw==/315x250%23c/0kx%2F5a.jpg",
+          "author": "INTJT2",
+          "author_url": "https://intjt2.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "Goblin Book Fetch",
+          "url": "https://amilovescake.itch.io/goblin-book-fetch",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3ODg2MzYwLnBuZw==/315x250%23c/wCN%2FUL.png",
+          "author": "amilovescake , Felipe Tapia , Dilligent6 , Sagar Dulay",
+          "author_url": "https://amilovescake.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "Spellweaver",
+          "url": "https://jazhikho.itch.io/spellweaver",
+          "thumbnail": "https://img.itch.zone/aW1nLzI3ODcyNTk0LnBuZw==/315x250%23c/Yaxih9.png",
+          "author": "jazhikho",
+          "author_url": "https://jazhikho.itch.io/"
+        }
+      ]
     },
     {
       "week": 6,
@@ -265,7 +290,32 @@
       "ratings": 9,
       "joined": 0,
       "status": "past",
-      "top_entries": []
+      "top_entries": [
+        {
+          "rank": "1st",
+          "title": "Space Arcade",
+          "url": "https://coderboy-100.itch.io/space-arcade",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MTQ5MjgxLnBuZw==/315x250%23c/HpajLj.png",
+          "author": "Coderboy_100",
+          "author_url": "https://coderboy-100.itch.io/"
+        },
+        {
+          "rank": "2nd",
+          "title": "Signal Rift",
+          "url": "https://jazhikho.itch.io/signal-rift",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MTU1NDc3LnBuZw==/315x250%23c/Fj89w1.png",
+          "author": "jazhikho",
+          "author_url": "https://jazhikho.itch.io/"
+        },
+        {
+          "rank": "3rd",
+          "title": "space shooter",
+          "url": "https://ka1919.itch.io/space-shooter",
+          "thumbnail": "https://img.itch.zone/aW1nLzI4MDY0OTQ5LnBuZw==/315x250%23c/RiRBHn.png",
+          "author": "Ka1919",
+          "author_url": "https://ka1919.itch.io/"
+        }
+      ]
     },
     {
       "week": 8,
